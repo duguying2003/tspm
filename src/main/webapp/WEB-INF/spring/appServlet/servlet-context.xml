@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+		">
+
+	<!-- <mvc:default-servlet-handler/> -->
+	
+	<mvc:resources mapping="/**" location="/static/" />
+	
+	<!-- 如果使用了mvc:resources mapping -->
+	<!-- （导致SpringMVC不再使用默认策略DefaultAnnotationHandlerMapping，而是使用了RequestMappingHandlerMapping这个类），就需要加这个来注册controller -->
+	<mvc:annotation-driven/>	
+	
+	<context:annotation-config/>
+	<!--context:component-scan base-package="com.edreaminfo.cbas" /-->
+	<context:component-scan base-package="com.edreaminfo.tspm" />
+	<context:property-placeholder location = "classpath:configuration.properties"/>
+
+	<task:executor id="executor" pool-size="5" />
+	<task:scheduler id="scheduler" pool-size="10" />
+	<task:annotation-driven executor="executor"
+		scheduler="scheduler" />
+
+<!-- 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean> -->
+
+	<!-- freemarker -->
+	<beans:bean id="freemarkerConfiguration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+    	<beans:property name="location" value="classpath:freemarker.properties" />
+	</beans:bean>
+	
+	<beans:bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+	    <beans:property name="freemarkerSettings" ref="freemarkerConfiguration" />
+	    <beans:property name="templateLoaderPath" value="/WEB-INF/views/"/>
+	    <beans:property name="freemarkerVariables">
+	        <beans:map>
+	            <beans:entry key="xml_escape" value-ref="fmXmlEscape"/>
+	        </beans:map>
+	    </beans:property>
+	</beans:bean>
+
+	<beans:bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape"/>
+
+	<beans:bean id="viewResolver"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<beans:property name="cache" value="true" />
+		<beans:property name="prefix" value="" />
+		<beans:property name="suffix" value=".ftl" />
+		<beans:property name="contentType" value="text/html;charset=UTF-8" />
+	</beans:bean>
+	<!-- end of freemarker -->
+	
+</beans:beans>

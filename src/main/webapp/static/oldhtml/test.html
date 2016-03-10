@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="assets/plugins/echarts/echarts.js"></script>
+</head>
+<body>
+	<div id="main" style="width: 1600px; height: 800px;"></div>
+	<script type="text/javascript">
+		// 基于准备好的dom，初始化echarts实例
+		                // 基于准备好的dom，初始化echarts图表
+		                var myChart1 = echarts.init(document.getElementById('main')); 
+
+		                var option = {
+		                	    tooltip : {
+		                	        trigger: 'item',
+		                	        formatter: '{b}'
+		                	    },
+		                	    series : [
+		                	        {
+		                	            name: '中国',
+		                	            type: 'map',
+		                	            mapType: 'china',
+		                	            selectedMode : 'multiple',
+		                	            itemStyle:{
+		                	                normal:{label:{show:true}},
+		                	                emphasis:{label:{show:true}}
+		                	            },
+		                	            data:[
+		                	                {name:'广东',selected:true}
+		                	            ]
+		                	        }
+		                	    ]
+		                	};
+		                
+		        
+		                // 为echarts对象加载数据 
+		                myChart1.setOption(option); 
+	</script>
+</body>
+</html>

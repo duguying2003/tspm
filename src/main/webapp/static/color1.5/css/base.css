@@ -1,0 +1,210 @@
+.align-right {
+	text-align: right;
+}
+
+
+/* -------------------------------
+	general structure
+------------------------------- */
+@media screen and (min-width: 767px) {
+	.navbar-brand {
+		white-space: nowrap;
+	}
+}
+.navbar-brand {
+	font-weight: bold;
+	font-family: Arial,'微软雅黑', sans-serif;
+}
+.page-header .show-page-intro {
+    color: #7c7f83;
+}
+
+#page-intro .panel-body {
+    padding: 0;
+}
+
+.tagBox {
+    background: none;
+}
+
+.tagBox span.label {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 100%;
+    line-height: 1.5em;
+}
+
+.tagBox span.label input[type=checkbox] {
+    display: inline-block;
+    vertical-align: -20%;
+}
+
+.tagBox span.label a {
+    color: #fff;
+}
+
+.tagBox span.label a.btn {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.tagBox span.label:hover a.btn {
+    visibility: visible;
+    opacity: 1;
+}
+.widget.widget-stats {
+	overflow: visible;
+}
+.widget-stats .stats-icon {
+	z-index: 10;
+}
+.widget-stats .stats-info {
+	position: relative;
+	z-index: 20;
+}
+
+/* -------------------------------
+	filter
+------------------------------- */
+
+.simply-filter .btn {
+    margin-bottom: 10px;
+}
+
+.advanced-filter {
+    background: none;
+}
+
+.advanced-filter .nav-tabs {
+    background: none;
+}
+
+.advanced-filter .nav-tabs li a {
+    cursor: pointer !important;
+}
+
+.advanced-filter .panel-body {
+	padding: 0;
+    background: #fff;
+}
+
+.advanced-filter .tab-content {
+	margin-bottom: 0;
+}
+
+.advanced-filter-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+.advanced-filter-list ul li {
+	display: block;
+	padding: 10px 0 5px 0;
+	list-style: none;
+	border-bottom: 1px solid #eee;
+}
+.advanced-filter-list ul li:first-child {
+	border-top: 1px solid #eee;
+}
+.advanced-filter-list ul li .search-box .search {
+	float: left;
+	width: 190px;
+}
+.advanced-filter-list ul li .filter-button-box {
+	height: 30px;
+	padding-right: 80px;
+	font-size: 0;
+	overflow: hidden;
+}
+.advanced-filter-list ul li .filter-button-box.expand {
+	height: auto;
+}
+.advanced-filter-list ul li .filter-button-box button {
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+	.advanced-filter-list ul li .col-xs-12 {
+		margin-bottom: 10px;
+	}
+	.advanced-filter-list ul li .search-box .search {
+		width: 130px;
+	}
+
+}
+/* -------------------------------
+	echarts
+------------------------------- */
+
+.echarts-container {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+.echarts.tab-content {
+	width: 100%;
+	overflow: hidden;
+}
+.echarts.tab-content>.tab-pane {
+	display: block;
+	visibility: visible;
+	position: absolute;
+	width: 100%;
+	left: -100%;
+	top: 0;
+	z-index: 0;
+	opacity: 0;
+}
+.echarts.tab-content>.tab-pane.active {
+	visibility: visible;
+	position: relative;
+	left: 0;
+	z-index: 100;
+	opacity: 1;
+}
+.charts-option .radio-inline {
+	display: inline-block;
+	float: none;
+	margin-left: 0;
+	margin: 0 10px 10px 0;
+}
+
+
+
+
+/* -------------------------------
+	table
+------------------------------- */
+.table-folded .expand,
+.table-folded .collapse {
+	padding: 5px 5px 5px 0;
+	cursor: pointer;
+	visibility: visible;
+}
+.table-folded tr.child td {
+	background: #929ba1 !important;
+	color: #fff;
+}
+.table-folded tr.child td strong,
+.table-folded tr.child td span {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+

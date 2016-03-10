@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.edreaminfo.cbas.orm.dao.PageviewDayStatsMapper" >
+  <select id="selectPageStatisticGroupByPageId" resultType="hashmap" parameterType="Map" >
+    select page_id as pageId,
+            sum(pageview_cnt) as pvCount,
+            sum(session_cnt) as sessionCount,
+            sum(eventdo_cnt_sum) as eventdoCountSum,
+            sum(pageview_quit_sum) as pvQuitSum,
+            sum(pageview_duration_sum) as pvDurationSum,
+            sum(1) as dayCount
+        from pageview_day_stats
+        <where>
+          dt between date(#{startDay}) and date(#{endDay})
+          <if test="channel_id != null"> AND channel_id = #{channel_id} </if>
+          <if test="version_id != null"> AND version_id = #{version_id} </if>
+        </where>
+        group by page_id
+  </select>
+  
+  <select id="selectPageStatisticGroupByTargetDay" resultType="hashmap" parameterType="Map" >
+    select dt as targetDay,
+            sum(pageview_cnt) as pvCount,
+            sum(session_cnt) as sessionCount,
+            sum(eventdo_cnt_sum) as eventdoCountSum,
+            sum(pageview_quit_sum) as pvQuitSum,
+            sum(pageview_duration_sum) as pvDurationSum,
+            sum(1) as pageCount
+        from pageview_day_stats
+        <where>
+          dt between date(#{startDay}) and date(#{endDay})
+          <if test="page_id != null"> AND page_id = #{page_id} </if>
+          <if test="channel_id != null"> AND channel_id = #{channel_id} </if>
+          <if test="version_id != null"> AND version_id = #{version_id} </if>
+        </where>
+        group by dt
+  </select>
+</mapper>
