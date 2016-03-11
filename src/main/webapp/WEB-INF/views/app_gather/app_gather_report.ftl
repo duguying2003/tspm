@@ -852,7 +852,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								        <!--名单使用情况结束-->
 						            </div>
 						            
-						            <div class="tab2 tab-pane" id="portlet_tab_4_2" style="height:900px">
+						            <div class="tab2 tab-pane" id="portlet_tab_4_2">
 						            	<!--申请单成交量开始-->
 								            <div class="row">
 								            	<div class="col-md-6">
@@ -1435,7 +1435,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								        </div>
 								        <!--名单使用情况结束-->
 						            </div>
-						            <div class="tab2 tab-pane" id="portlet_tab_4_3" style="height:900px">
+						            <div class="tab2 tab-pane" id="portlet_tab_4_3" >
 						            	<div class="row">
 							            	<div class="col-md-12" id="portlet_tab_bar_4_4_1" style="height:500px">
 							            	</div>
@@ -1520,11 +1520,11 @@ License: You must have a valid license purchased only from themeforest(the above
 						            	</div>
 						            	</div>
 						            </div>
-						            <div class="tab2 tab-pane" id="portlet_tab_4_4" style="height:1300px">
+						            <div class="tab2 tab-pane" id="portlet_tab_4_4">
 						            	<div class="row">
-							            	<div class="col-md-6" id="portlet_tab_map_4_5_1" style="height:900px">
+							            	<div class="col-md-6" id="portlet_tab_map_4_5_1" style="height:500px">
 							            	</div>
-							            	<div class="col-md-6" id="portlet_tab_bar_4_5_1" style="height:900px">
+							            	<div class="col-md-6" id="portlet_tab_bar_4_5_1" style="height:500px">
 							            	</div>
 						            	</div>
 						            	<div class="row">
