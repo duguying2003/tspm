@@ -542,7 +542,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>数据统计</span>
+                                <span>数据统计  [ 2016/03/01-2016/03/02 ]</span>
+                                
                             </li>
                         </ul>
                         <!--<div class="page-toolbar">
@@ -572,6 +573,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                         </div>-->
                     </div>
+                    <div><small>在此Demo演示版中，所有的统计都被集中在一页内展示</small></div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
                     <!--<h3 class="page-title"> Ajax Portlets
