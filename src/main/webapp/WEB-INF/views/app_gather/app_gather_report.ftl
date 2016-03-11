@@ -183,7 +183,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					        </div>
 					        <div class="portlet-body form">
 					            <div class="tab-content">
-					            	<div class="tab2 tab-pane active" id="portlet_tab_4_1" style="height:1100px">
+					            	<div class="tab2 tab-pane active" id="portlet_tab_4_1" >
 									<!-- BEGIN : ECHARTS -->
 				                    <div class="row">
 				                        <div class="col-md-6">
