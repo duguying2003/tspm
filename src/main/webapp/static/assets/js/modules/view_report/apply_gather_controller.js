@@ -1297,7 +1297,7 @@ function toData()
 							 saveAsImage:{show:!0}}},
 							 xAxis:[{
 								 type:"category",
-								 data:eval("[" + data.userName2 + "]")}],
+								 data:eval("[" + data.deptName + "]")}],
 							 yAxis:[{type:"value",splitArea:{show:!0}}],
 							 series:[
 							 {
@@ -1345,7 +1345,7 @@ function toData()
 							 saveAsImage:{show:!0}}},
 							 xAxis:[{
 								 type:"category",
-								 data:eval("[" + data.userName2 + "]")}],
+								 data:eval("[" + data.deptName + "]")}],
 							 yAxis:[{type:"value",splitArea:{show:!0}}],
 							 series:[
 							 {

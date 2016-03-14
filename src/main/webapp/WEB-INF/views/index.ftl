@@ -58,7 +58,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
                 <div class="col-md-6 login-container bs-reset">
                     <div class="login-content">
-                        <h1>电销数据统计系统</h1>
+                        <h1>电销坐席绩效分析系统</h1>
                         <p>  </p>
                         <form action="javascript:;" class="login-form" method="post">
                             <div class="alert alert-danger display-hide">
@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="row bs-reset">
                             <div class="col-xs-5 bs-reset">
                                 <ul class="login-social">
-                                    <li>
+                                    <!--<li>
                                         <a href="javascript:;">
                                             <i class="icon-social-facebook"></i>
                                         </a>
@@ -118,12 +118,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <a href="javascript:;">
                                             <i class="icon-social-dribbble"></i>
                                         </a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </div>
                             <div class="col-xs-7 bs-reset">
                                 <div class="login-copyright text-right">
-                                    <p>Copyright &copy; Keenthemes 2015</p>
+                                    <p>Copyright &copy; eDreamInfo 2016</p>
                                 </div>
                             </div>
                         </div>

@@ -71,7 +71,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>数据统计  [ 2016/03/01-2016/03/02 ]</span>
+                                <span>数据统计  </span>
                                 
                             </li>
                         </ul>
@@ -102,12 +102,12 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                         </div>-->
                     </div>
-                    <div><small>在此Demo演示版中，所有的统计都被集中在一页内展示</small></div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <!--<h3 class="page-title"> Ajax Portlets
-                        <small>ajax portlet samples</small>
-                    </h3>-->
+                    <h3 class="page-title"> 业务数据统计
+                        <small>2016/03/01-2016/03/02</small>
+                        <small>在此Demo演示版中，所有的统计都被集中在一页内展示</small>
+                    </h3>
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
                     <div class="panel panel-inverse">
@@ -175,12 +175,6 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="row">
             	<div class="col-md-12">
 					<div class="portlet light ">
-						<div class="portlet-title tabbable-line">
-					    	<div class="caption">
-					        	<i class="icon-globe font-red"></i>
-					            <span class="caption-subject font-red bold uppercase">数据统计</span>
-					        </div>
-					        </div>
 					        <div class="portlet-body form">
 					            <div class="tab-content">
 					            	<div class="tab2 tab-pane active" id="portlet_tab_4_1" >
@@ -404,12 +398,12 @@ License: You must have a valid license purchased only from themeforest(the above
 								        <!--申请单成交量结束-->
 								        <!--实时交件汇总排名开始-->
 								        <div class="row">
-								        <div class="col-md-12">
-								        <div class="portlet light ">
-								        <div class="portlet-title tabbable-line">
+									    	<div class="col-md-6">
+								        	<div class="portlet light ">
+								        	<div class="portlet-title tabbable-line">
 									    	<div class="caption">
 									    		<i class=" icon-layers font-green"></i>
-						                        <span class="caption-subject font-green bold uppercase">实时交件汇总排名</span>
+						                        <span class="caption-subject font-green bold uppercase">实时交件数量排名</span>
 									        </div>
 									        <div class="actions">
 	                                        <div class="btn-group">
@@ -422,7 +416,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	                                                    </a>
 	                                                </li>
 	                                                <li>
-	                                                    <a href="javascript:;"> 个人房屋贷款
+	                                                    <a href="javascript:;"> 信用卡业务
 	                                                    </a>
 	                                                </li>
 	                                            </ul>
@@ -431,11 +425,45 @@ License: You must have a valid license purchased only from themeforest(the above
 									        </div>
 									        <div class="portlet-body form">
 								            <div class="row">
-										    	<div class="col-md-6" id="portlet_tab_bar_4_2_5_1" style="height:500px">
-										        </div>
-										        <div class="col-md-6" id="portlet_tab_bar_4_2_5_2" style="height:500px">
-										        </div>
+						                    	<div id="portlet_tab_bar_4_2_5_1" style="height:500px;"></div>
+						                        </div>
+						                    </div>    
+						                    </div>
+									        </div>    
+						                    <div class="col-md-6">
+								        	<div class="portlet light ">
+								        	<div class="portlet-title tabbable-line">
+									    	<div class="caption">
+									    		<i class=" icon-layers font-green"></i>
+						                        <span class="caption-subject font-green bold uppercase">实时交件数量排名</span>
 									        </div>
+									        <div class="actions">
+	                                        <div class="btn-group">
+	                                            <a href="" class="btn dark btn-outline btn-circle btn-sm dropdown-toggle" data-hover="dropdown" data-close-others="true"> 业务
+	                                                <span class="fa fa-angle-down"> </span>
+	                                            </a>
+	                                            <ul class="dropdown-menu pull-right">
+	                                                <li>
+	                                                    <a href="javascript:;"> 万拥金
+	                                                    </a>
+	                                                </li>
+	                                                <li>
+	                                                    <a href="javascript:;"> 信用卡业务
+	                                                    </a>
+	                                                </li>
+	                                            </ul>
+	                                        </div>
+									        </div>
+									        </div>
+									        <div class="portlet-body form">
+								            <div class="row">
+						                    	<div id="portlet_tab_bar_4_2_5_2" style="height:500px;"></div>
+						                    </div>
+						                    </div>
+						                    </div>
+						                    </div>      
+									        <div class="portlet-body form">
+								            
 									        <div class="row">
 									        <div class="col-md-6">
 									        <div class="portlet box blue">
@@ -593,9 +621,6 @@ License: You must have a valid license purchased only from themeforest(the above
 											    </tbody>
 											</table>
 											</div>
-						            	</div>
-						            	</div>
-						            	</div>
 						            	</div>
 						            	</div>
 						            	</div>
@@ -851,7 +876,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								        </div>
 								        <!--名单使用情况结束-->
 						            </div>
-						            
+						            </div>
 						            <div class="tab2 tab-pane" id="portlet_tab_4_2">
 						            	<!--申请单成交量开始-->
 								            <div class="row">
@@ -988,12 +1013,12 @@ License: You must have a valid license purchased only from themeforest(the above
 								        <!--申请单成交量结束-->
 								        <!--实时交件汇总排名开始-->
 								        <div class="row">
-								        <div class="col-md-12">
-								        <div class="portlet light ">
-								        <div class="portlet-title tabbable-line">
+								        <div class="col-md-6">
+								        	<div class="portlet light ">
+								        	<div class="portlet-title tabbable-line">
 									    	<div class="caption">
 									    		<i class=" icon-layers font-green"></i>
-						                        <span class="caption-subject font-green bold uppercase">实时交件汇总排名</span>
+						                        <span class="caption-subject font-green bold uppercase">实时交件数量排名</span>
 									        </div>
 									        <div class="actions">
 	                                        <div class="btn-group">
@@ -1006,7 +1031,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	                                                    </a>
 	                                                </li>
 	                                                <li>
-	                                                    <a href="javascript:;"> 个人房屋贷款
+	                                                    <a href="javascript:;"> 信用卡业务
 	                                                    </a>
 	                                                </li>
 	                                            </ul>
@@ -1015,11 +1040,43 @@ License: You must have a valid license purchased only from themeforest(the above
 									        </div>
 									        <div class="portlet-body form">
 								            <div class="row">
-										    	<div class="col-md-6" id="portlet_tab_bar_4_3_3" style="height:500px">
-										        </div>
-										        <div class="col-md-6" id="portlet_tab_bar_4_3_4" style="height:500px">
-										        </div>
+						                    	<div id="portlet_tab_bar_4_3_3" style="height:500px;"></div>
+						                        </div>
+						                    </div>    
+						                    </div>
+									        </div>    
+						                    <div class="col-md-6">
+								        	<div class="portlet light ">
+								        	<div class="portlet-title tabbable-line">
+									    	<div class="caption">
+									    		<i class=" icon-layers font-green"></i>
+						                        <span class="caption-subject font-green bold uppercase">实时交件数量排名</span>
 									        </div>
+									        <div class="actions">
+	                                        <div class="btn-group">
+	                                            <a href="" class="btn dark btn-outline btn-circle btn-sm dropdown-toggle" data-hover="dropdown" data-close-others="true"> 业务
+	                                                <span class="fa fa-angle-down"> </span>
+	                                            </a>
+	                                            <ul class="dropdown-menu pull-right">
+	                                                <li>
+	                                                    <a href="javascript:;"> 万拥金
+	                                                    </a>
+	                                                </li>
+	                                                <li>
+	                                                    <a href="javascript:;"> 信用卡业务
+	                                                    </a>
+	                                                </li>
+	                                            </ul>
+	                                        </div>
+									        </div>
+									        </div>
+									        <div class="portlet-body form">
+								            <div class="row">
+						                    	<div id="portlet_tab_bar_4_3_4" style="height:500px;"></div>
+						                    </div>
+						                    </div>
+						                    </div>
+						                    </div>      
 									        <div class="row">
 									        <div class="col-md-6">
 									        <div class="portlet box blue">
@@ -1177,9 +1234,6 @@ License: You must have a valid license purchased only from themeforest(the above
 											    </tbody>
 											</table>
 											</div>
-						            	</div>
-						            	</div>
-						            	</div>
 						            	</div>
 						            	</div>
 						            	</div>

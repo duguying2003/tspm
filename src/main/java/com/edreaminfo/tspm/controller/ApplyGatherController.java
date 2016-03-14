@@ -30,7 +30,7 @@ public class ApplyGatherController {
 	@RequestMapping(value="/") 
 	public ModelAndView index(HttpServletRequest request, HttpServletResponse response)
 	{ 
-		return new ModelAndView("index1"); 
+		return new ModelAndView("index"); 
 	}
 	@RequestMapping(value="/toApplyGatherReport") 
 	public ModelAndView toApplyGatherReport(HttpServletRequest request, HttpServletResponse response)
