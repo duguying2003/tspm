@@ -344,7 +344,7 @@
                         <!-- BEGIN QUICK SIDEBAR TOGGLER -->
                         <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                         <li class="dropdown dropdown-quick-sidebar-toggler">
-                            <a href="http://localhost:8080/applygather/" class="dropdown-toggle">
+                            <a href="http://120.55.167.198:8080/tspm/" class="dropdown-toggle">
                                 <i class="icon-logout"></i>
                             </a>
                         </li>

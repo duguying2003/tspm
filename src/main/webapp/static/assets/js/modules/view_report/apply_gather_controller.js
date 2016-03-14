@@ -61,7 +61,22 @@ var colorStyle = {
 					}
 			}
 };
-
+var appdt = {
+		language:{aria:{sortAscending:": activate to sort column ascending",sortDescending:": activate to sort column descending"},
+			  emptyTable:"No data available in table",info:"Showing _START_ to _END_ of _TOTAL_ records",
+			  infoEmpty:"No records found",infoFiltered:"(filtered1 from _MAX_ total records)",
+			  lengthMenu:"Show _MENU_",
+			  search:"Search:",
+			  zeroRecords:"No matching records found",
+			  paginate:{previous:"Prev",next:"Next",last:"Last",first:"First"}
+	},
+	bStateSave:!0,
+	pagingType:"bootstrap_extended",
+	lengthMenu:[[5,15,20,-1],[5,15,20,"All"]],
+	pageLength:5,
+	columnDefs:[{orderable:!1,targets:[0]},{searchable:!0,targets:[0]}],
+	order:[[1,"desc"]]
+};
 jQuery(document).ready(function(){
 	App.init();
 	//日历选择
@@ -405,8 +420,8 @@ require(
 			            barCategoryGap: '50%',
 			            itemStyle: {
 			                normal: {
-			                    color: 'tomato',
-			                    barBorderColor: 'tomato',
+			                    color: '#FF6347',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -423,7 +438,7 @@ require(
 			            itemStyle: {
 			                normal: {
 			                    color: '#fff',
-			                    barBorderColor: 'tomato',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -433,7 +448,7 @@ require(
 			                            
 			                        },
 			                        textStyle: {
-			                            color: 'tomato'
+			                            color: '#FF6347'
 			                        }
 			                    }
 			                }
@@ -633,6 +648,25 @@ require(
 									 }
 									 ]
 					});
+					var str1=data.userName2.split(",");
+					var tl=data.resultTmp2.split(",");
+					var ts=data.resultTmp.split(",");
+					var htm='';
+					var dataTable=$("#sample_2").dataTable();
+					dataTable.fnClearTable();
+					dataTable.fnDestroy();
+					$.each(str1,function(n,value) { 
+						var db="";
+						var cls="label-success";
+						if(tl[n]<10)
+						{
+							db="未";
+							cls="label-warning";
+						}
+						htm=htm+"<tr class='odd gradeX'><td>"+str1[n].replace("'","").replace("'","")+"</td><td>"+ts[n]+"</td><td>"+tl[n]+"</td><td><span class='label label-sm "+cls+"'> "+db+"达标 </span></td></tr>";
+					});
+					addList("tstl",htm);
+					$('#sample_2').dataTable(appdt);
 				}
 			});
 		},60000);
@@ -787,6 +821,7 @@ a=function(){
 		),
 		jQuery.uniform.update(e)})
 },
+
 b=function(){
 	var e=$("#sample_3");
 	e.dataTable({
@@ -1240,8 +1275,8 @@ function toData()
 			            barCategoryGap: '50%',
 			            itemStyle: {
 			                normal: {
-			                    color: 'tomato',
-			                    barBorderColor: 'tomato',
+			                    color: '#FF6347',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -1258,7 +1293,7 @@ function toData()
 			            itemStyle: {
 			                normal: {
 			                    color: '#fff',
-			                    barBorderColor: 'tomato',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -1268,7 +1303,7 @@ function toData()
 			                            
 			                        },
 			                        textStyle: {
-			                            color: 'tomato'
+			                            color: '#FF6347'
 			                        }
 			                    }
 			                }
@@ -1698,8 +1733,8 @@ function toData()
 			            barCategoryGap: '50%',
 			            itemStyle: {
 			                normal: {
-			                    color: 'tomato',
-			                    barBorderColor: 'tomato',
+			                    color: '#FF6347',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -1716,7 +1751,7 @@ function toData()
 			            itemStyle: {
 			                normal: {
 			                    color: '#fff',
-			                    barBorderColor: 'tomato',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -1726,7 +1761,7 @@ function toData()
 			                            
 			                        },
 			                        textStyle: {
-			                            color: 'tomato'
+			                            color: '#FF6347'
 			                        }
 			                    }
 			                }
@@ -1946,7 +1981,7 @@ function toData()
 				        min : 0,
 				        max : 500,
 				        calculable : true,
-				        color: ['maroon','purple','red','orange','yellow','lightgreen']
+				        color: ['#B03060','#A020F0','#FF0000','#FFA500','#FFFF00','#90EE90']
 				    },
 				    toolbox: {
 				        show : false,
@@ -2137,8 +2172,8 @@ function toData()
 			            barCategoryGap: '50%',
 			            itemStyle: {
 			                normal: {
-			                    color: 'tomato',
-			                    barBorderColor: 'tomato',
+			                    color: '#FF6347',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -2155,7 +2190,7 @@ function toData()
 			            itemStyle: {
 			                normal: {
 			                    color: '#fff',
-			                    barBorderColor: 'tomato',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -2165,7 +2200,7 @@ function toData()
 			                            
 			                        },
 			                        textStyle: {
-			                            color: 'tomato'
+			                            color: '#FF6347'
 			                        }
 			                    }
 			                }
@@ -2229,8 +2264,8 @@ function toData()
 			            barCategoryGap: '50%',
 			            itemStyle: {
 			                normal: {
-			                    color: 'tomato',
-			                    barBorderColor: 'tomato',
+			                    color: '#FF6347',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -2247,7 +2282,7 @@ function toData()
 			            itemStyle: {
 			                normal: {
 			                    color: '#fff',
-			                    barBorderColor: 'tomato',
+			                    barBorderColor: '#FF6347',
 			                    barBorderWidth: 6,
 			                    barBorderRadius:0,
 			                    label : {
@@ -2257,7 +2292,7 @@ function toData()
 			                            
 			                        },
 			                        textStyle: {
-			                            color: 'tomato'
+			                            color: '#FF6347'
 			                        }
 			                    }
 			                }

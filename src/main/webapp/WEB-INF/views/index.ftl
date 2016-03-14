@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <head>
         <meta charset="utf-8" />
-        <title>Metronic | User Login 5</title>
+        <title>TSPM | 电销坐席绩效分析系统</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -72,14 +72,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <!--<input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="Password" name="password" required/>--> </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-4">
+                                <!--<div class="col-sm-4">
                                     <div class="rem-password">
-                                        <!--<p>Remember Me
+                                        <p>Remember Me
                                             <input type="checkbox" class="rem-checkbox" />
-                                        </p>-->
+                                        </p>
                                     </div>
-                                </div>
-                                <div class="col-sm-8 text-right">
+                                </div>-->
+                                <div class="col-sm-8 text-left">
                                     <div class="forgot-password">
                                         <!--a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a-->
                                     </div>

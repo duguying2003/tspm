@@ -1,5 +1,10 @@
 
 <!DOCTYPE html>
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+
+<meta HTTP-EQUIV="expires" CONTENT="0">
 <!-- 
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
 Version: 4.5.4
@@ -41,7 +46,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- ================== END PAGE LEVEL STYLE ================== -->
 		<!-- BEGIN THEME GLOBAL STYLES -->
 		<!-- ================== BEGIN BASE JS ================== -->
-		<script src="../color1.5/plugins/pace/pace.min.js"></script>
+		
 		<!-- ================== END BASE JS ================== -->
     <!-- END HEAD -->
 
@@ -105,7 +110,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
                     <h3 class="page-title"> 业务数据统计
-                        <small>2016/03/01-2016/03/02</small>
+                        <small>2016/03/01-2016/03/02</small><br/>
                         <small>在此Demo演示版中，所有的统计都被集中在一页内展示</small>
                     </h3>
                     <!-- END PAGE TITLE-->
@@ -1923,7 +1928,6 @@ License: You must have a valid license purchased only from themeforest(the above
         <#include "../common/foot.ftl"/>
         
         <!-- END CORE PLUGINS -->
-        <script src="../assets/global/scripts/datatable.js" type="text/javascript"></script>
     	<script src="../assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
     	<script src="../assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
     	<script src="../assets/global/plugins/echarts/echarts.js" type="text/javascript"></script>

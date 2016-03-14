@@ -45,8 +45,8 @@ public class ApplyGatherController {
 		JSONObject jsonObject=new JSONObject();
 		jsonObject.put("userName","'张刚','李明','程磊','王浩力','丁丁','李一平','杨洋','孔真','蒋腾立','辛力'");
 		jsonObject.put("deptName","'EPP组1','LDAP组1','EPP组2','LDAP组2','EPP组3','LDAP组3','EPP组4','LDAP组4','EPP组5','LDAP组5'");
-		jsonObject.put("userName2","'李明','张刚','丁丁','程磊','王浩力','李一平','杨洋','孔真','蒋腾立','辛力'");
-		jsonObject.put("resultTmp", "450,330,300,180,100,100,98,89,88,70");
+		jsonObject.put("userName2","'张刚','李明','丁丁','程磊','王浩力','李一平','杨洋','孔真','蒋腾立','辛力'");
+		jsonObject.put("resultTmp", "250,330,300,180,100,100,98,89,88,70");
 		jsonObject.put("resultTmp2", "18,13,13,11,10,9,8,7,6,5");
 		
 		jsonObject.put("resultTmp3", "4500,3300,3000,1800,1000,1000,980,890,880,700");
