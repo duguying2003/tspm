@@ -1,10 +1,5 @@
 
 <!DOCTYPE html>
-<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
-
-<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
-
-<meta HTTP-EQUIV="expires" CONTENT="0">
 <!-- 
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
 Version: 4.5.4
@@ -43,6 +38,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
 	    <link href="../assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
 	    <link href="../assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+	    <link href="../assets/global/plugins/shCircleLoader-master/jquery.shCircleLoader.css" rel="stylesheet" type="text/css" />
 		<!-- ================== END PAGE LEVEL STYLE ================== -->
 		<!-- BEGIN THEME GLOBAL STYLES -->
 		<!-- ================== BEGIN BASE JS ================== -->
@@ -229,7 +225,10 @@ License: You must have a valid license purchased only from themeforest(the above
 				                                    </div>-->
 				                                </div>
 				                                <div class="portlet-body">
-				                                    <div id="echarts_bar_tl" style="height:500px;"></div>
+				                                    <div id="echarts_bar_tl" style="height:500px;">
+				                                    </div>
+				                                    <div id="echarts_bar_tl_1" style="width:30px;height:30px;position:absolute;top:40%;margin-left:40%;">
+				                                    </div>
 				                                </div>
 				                            </div>
 				                        </div>
@@ -1949,6 +1948,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/shCircleLoader-master/jquery.shCircleLoader-min.js" type="text/javascript"></script>
         <!--private js-->
     	<script src="../assets/js/modules/view_report/apply_gather_controller.js" type="text/javascript"></script>
     	

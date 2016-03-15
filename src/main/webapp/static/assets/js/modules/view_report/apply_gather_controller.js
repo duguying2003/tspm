@@ -157,7 +157,7 @@ require(
 			    },
 			    legend: {
 			        y: 55,
-			        data:['交易成功率','单件产能','客户成功率']
+			        data:['交易成功率','交易成功率（昨天）','单件产能','单件产能（昨天）','客户成功率','客户成功率（昨天）']
 			    },
 			    toolbox: {
 			        show : true,
@@ -200,14 +200,14 @@ require(
 			            data:eval("[" + data.resultTmp91 + "]")
 			        },
 			      {
-			            name:'交易成功率',
+			            name:'交易成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle : dataStyle2,
 			            data:eval("[" + data.resultTmp14 + "]")
 			        },
 			        {
-			            name:'交易成功率',
+			            name:'交易成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -228,14 +228,14 @@ require(
 			            data:eval("[" + data.resultTmp101 + "]")
 			        },
 			        {
-			            name:'单件产能',
+			            name:'单件产能（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle : dataStyle3,
 			            data:eval("[" + data.resultTmp15 + "]")
 			        },
 			        {
-			            name:'单件产能',
+			            name:'单件产能（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -256,14 +256,14 @@ require(
 			            data:eval("[" + data.resultTmp111 + "]")
 			        },
 			        {
-			            name:'客户成功率',
+			            name:'客户成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle : dataStyle4,
 			            data:eval("[" + data.resultTmp16 + "]")
 			        },
 			        {
-			            name:'客户成功率',
+			            name:'客户成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -576,6 +576,7 @@ require(
 		},60000);
 		
 		var b=e.init(document.getElementById("echarts_bar_tl"));
+		$('#echarts_bar_tl_1').shCircleLoader({color:'green'});
 		$.ajax({
 			url:"getApplyGatherCountJSON",
 			data:{
@@ -584,6 +585,7 @@ require(
 				},
 			dataType: "json",
 			success: function(data){
+				$('#echarts_bar_tl_1').shCircleLoader('destroy');
 				b.setOption({
 					tooltip:{trigger:"axis"},
 					legend:{data:["通量（次）"]},
@@ -1134,7 +1136,7 @@ n=function(){
 		),
 		jQuery.uniform.update(e)})
 }
-o=function(){
+o1=function(){
 	var e=$("#sample_16");
 	e.dataTable({
 		language:{aria:{sortAscending:": activate to sort column ascending",sortDescending:": activate to sort column descending"},
@@ -1187,7 +1189,7 @@ p=function(){
 		jQuery.uniform.update(e)})
 }
 return{init:function(){
-	jQuery().dataTable&&(a(),b(),c(),d(),f(),g(),h(),i(),j(),k(),l(),m(),n(),o(),p())}
+	jQuery().dataTable&&(a(),b(),c(),d(),f(),g(),h(),i(),j(),k(),l(),m(),n(),o1(),p())}
 }}();
 
 function addList(id,str)
@@ -1480,7 +1482,7 @@ function toData()
 			            data:eval("[" + data.resultTmp14 + "]")
 			        },
 			        {
-			            name:'交易成功率',
+			            name:'交易成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -1508,7 +1510,7 @@ function toData()
 			            data:eval("[" + data.resultTmp15 + "]")
 			        },
 			        {
-			            name:'单件产能',
+			            name:'单件产能（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -1536,7 +1538,7 @@ function toData()
 			            data:eval("[" + data.resultTmp16 + "]")
 			        },
 			        {
-			            name:'客户成功率',
+			            name:'客户成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -1615,7 +1617,7 @@ function toData()
 			            data:eval("[" + data.resultTmp14 + "]")
 			        },
 			        {
-			            name:'交易成功率',
+			            name:'交易成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -1643,7 +1645,7 @@ function toData()
 			            data:eval("[" + data.resultTmp15 + "]")
 			        },
 			        {
-			            name:'单件产能',
+			            name:'单件产能（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,
@@ -1671,7 +1673,7 @@ function toData()
 			            data:eval("[" + data.resultTmp16 + "]")
 			        },
 			        {
-			            name:'客户成功率',
+			            name:'客户成功率（昨天）',
 			            type:'bar',
 			            stack: '总量1',
 			            itemStyle: placeHoledStyle,

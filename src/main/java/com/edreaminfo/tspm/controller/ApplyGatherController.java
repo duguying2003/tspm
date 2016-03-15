@@ -82,7 +82,7 @@ public class ApplyGatherController {
 		jsonObject.put("resultTmp12", "4,11,11,9,8,7,6,5,4,3");
 		jsonObject.put("resultTmp13", "4200,3200,2700,800,1000,500,970,800,880,100");
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		/*try {
+		try {
 			List<Map<String, Object>> batch = applyGatherService.findApplyGatherCount(df.parse(startDay),df.parse(endDay));
 			for (Map<String, Object> map : batch) {
 				ArrayList<String>item = new ArrayList<>();
@@ -90,7 +90,7 @@ public class ApplyGatherController {
 			}
 		} catch (ParseException e) {
 			e.printStackTrace();
-		}*/
+		}
 		return jsonObject;
 	}
 	@RequestMapping("/findApplyGatherCount")
