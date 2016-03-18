@@ -35,14 +35,14 @@
                             </form>
                             <!-- END RESPONSIVE QUICK SEARCH FORM -->
                         </li>-->
-                        <li class="nav-item start active open">
+                        <li class="nav-item">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <i class="icon-home"></i>
                                 <span class="title">业务数据统计模块</span>
                                 <span class="arrow"></span>
                             </a>
                             <ul class="sub-menu">
-                                <li class="nav-item start active open">
+                                <li id="side-1" class="nav-item">
                                     <a href="../applygather/toApplyGatherReport" class="nav-link ">
                                         <i class="icon-bar-chart"></i>
                                         <span class="title">数据统计</span>
