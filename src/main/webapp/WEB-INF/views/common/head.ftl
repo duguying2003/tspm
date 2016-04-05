@@ -5,7 +5,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="#">
-                        <img src="../assets/layouts/layout/img/logo1.png" alt="logo" class="logo-default" /> </a>
+                        <img src="../assets/layouts/layout/img/logo2.png" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler"> </div>
                 </div>
                 <!-- END LOGO -->

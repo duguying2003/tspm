@@ -22,7 +22,7 @@
 	
 	<context:annotation-config/>
 	<!--context:component-scan base-package="com.edreaminfo.cbas" /-->
-	<context:component-scan base-package="com.edreaminfo.tspm" />
+	<context:component-scan base-package="com.edreaminfo.ivr" />
 	<context:property-placeholder location = "classpath:configuration.properties"/>
 
 	<task:executor id="executor" pool-size="5" />

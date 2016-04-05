@@ -20,7 +20,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <head>
         <meta charset="utf-8" />
-        <title>TSPM | 电销坐席绩效分析系统</title>
+        <title>IVR | IVR分析系统</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -55,11 +55,11 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="row bs-reset">
                 <div class="col-md-6 bs-reset">
                     <div class="login-bg" style="background-image:url(assets/pages/img/login/bg1.jpg)">
-                        <img class="login-logo" src="assets/pages/img/login/logo1.png" /> </div>
+                        <img class="login-logo" src="assets/pages/img/login/logo2.png" /> </div>
                 </div>
                 <div class="col-md-6 login-container bs-reset">
                     <div class="login-content">
-                        <h1>电销坐席绩效分析系统</h1>
+                        <h1>IVR分析系统</h1>
                         <p>  </p>
                         <form action="javascript:;" class="login-form" method="post">
                             <div class="alert alert-danger display-hide">
@@ -81,9 +81,9 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </div>-->
                                 <div class="col-sm-8 text-left">
-                                    <div class="forgot-password">
+                                    <!--<div class="forgot-password">-->
                                         <!--a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a-->
-                                    </div>
+                                    <!--</div>-->
                                     <button class="btn blue" type="button" onclick="login();">进入系统</button>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <script>
         	function login()
         	{
-        		var url="applygather/toApplyGatherReport";
+        		var url="overallKPI/toIncomingTelegramNumAnalysis";
 				window.location.href = url;
         	}
         </script>

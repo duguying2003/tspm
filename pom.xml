@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.edreaminfo</groupId>
-  <artifactId>cbas</artifactId>
+  <artifactId>ivrsystem</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>cbas Maven Webapp</name>
+  <name>ivrsystem Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
 	<properties>
@@ -129,7 +129,7 @@
 	</dependencies>
 		
 	<build>
-		<finalName>cbas</finalName>
+		<finalName>ivrsystem</finalName>
 		
 		<plugins>
 			<plugin>
