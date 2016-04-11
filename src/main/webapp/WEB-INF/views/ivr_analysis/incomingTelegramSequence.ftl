@@ -56,7 +56,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN CONTAINER -->
         <div class="page-container">
             <#include "../common/left-menu.ftl"/>
-            <input id="side-menu" type="hidden" value="side-4" />
+            <input id="side-menu" type="hidden" value="side-10" />
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
@@ -106,7 +106,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 来电业务类型统计
+                    <h3 class="page-title"> 来电业务序列分析
                         <small>2016/03/01-2016/03/02</small><br/>
                         <small></small>
                     </h3>
@@ -146,79 +146,193 @@ License: You must have a valid license purchased only from themeforest(the above
 			    </div>
 			</div>
 			<!--begin content-->
-            <div class="row">
+			<div class="row">
 				<div class="col-md-6">
-					<div class="portlet light portlet-fit ">
+					<div class="portlet box blue">
 						<div class="portlet-title">
 							<div class="caption">
-						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">IVR来电</span>
+						    	<i class="fa fa-gift"></i>二步模式
 						    </div>
-						    <!--<div class="actions">
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-cloud-upload"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-wrench"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-trash"></i>
-						        </a>
-						        </div>-->
+						    <div class="tools">
+						    	<a href="javascript:;" class="collapse"> </a>
+						    </div>
 						</div>
 						<div class="portlet-body">
-							<div id="pie_bar1" style="height:500px;"></div>
+							<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
+							<thead>
+							<tr>
+								<th width="80%"> 二步模式 </th>
+								<th> 频数 </th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td>当期账单金额(IVR) -> 分期交易查询(CSR)</td>
+									<td>6094</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>未出账单查询(IVR) -> 未出账单查询(CSR)</td>
+									<td>4563</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>额度调整(IVR) -> 临时额度(IVR)</td>
+									<td>3838</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>额度调整(IVR) -> 账务查询(IVR)</td>
+									<td>3630</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>分期交易查询(CSR) -> 已出账单查询(CSR)</td>
+									<td>3630</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>账务查询(IVR) -> 额度调整(IVR)</td>
+									<td>3584</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>万用金申请(IVR) -> 万用金申请(CSR)</td>
+									<td>3380</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>临时额度(IVR) -> 额度调整(IVR)</td>
+									<td>3319</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>账务查询(IVR) -> 临时额度(IVR)</td>
+									<td>3168</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额(IVR) -> 已出账单查询(CSR)</td>
+									<td>3103</td>
+								</tr>
+							</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="portlet light portlet-fit ">
+					<div class="portlet box blue">
 						<div class="portlet-title">
 							<div class="caption">
-						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">CSR来电</span>
+						    	<i class="fa fa-gift"></i>三步模式
 						    </div>
-						    <!--<div class="actions">
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-cloud-upload"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-wrench"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-trash"></i>
-						        </a>
-						        </div>-->
+						    <div class="tools">
+						    	<a href="javascript:;" class="collapse"> </a>
+						    </div>
 						</div>
 						<div class="portlet-body">
-							<div id="pie_bar2" style="height:500px;"></div>
+							<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_2">
+							<thead>
+							<tr>
+								<th width="80%"> 三步模式 </th>
+								<th> 频数 </th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td>当期账单金额(IVR) -> 万用金申请(IVR) -> 万用金申请(CSR)</td>
+									<td>1326</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额(IVR) -> 分期交易查询(CSR) -> 已出账单查询(CSR)</td>
+									<td>1219</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>额度调整(IVR) -> 临时额度(IVR) -> 账务查询(IVR)</td>
+									<td>1083</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>账务查询(IVR) -> 额度调整(IVR) -> 临时额度(IVR)</td>
+									<td>1074</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>额度调整(IVR) -> 账务查询(IVR) -> 临时额度(IVR)</td>
+									<td>1064</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>账务查询(IVR) -> 临时额度(IVR) -> 额度调整(IVR)</td>
+									<td>1030</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>未出账单查询(IVR) -> 未出账单查询(CSR) -> 已出账单查询(CSR)</td>
+									<td>1027</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额(IVR) -> 已出账单查询(CSR) -> 分期交易查询(CSR)</td>
+									<td>1015</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额(IVR) -> 未出账单查询(IVR) -> 未出账单查询(CSR)</td>
+									<td>1008</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>未出账单查询(IVR) -> 未出账单查询(CSR) -> 分期交易查询(CSR)</td>
+									<td>964</td>
+								</tr>
+							</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="row">
 				<div class="col-md-12">
-					<div class="portlet light portlet-fit ">
+					<div class="portlet box blue">
 						<div class="portlet-title">
 							<div class="caption">
-						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">IVR&CSR来电</span>
+						    	<i class="fa fa-gift"></i>四步模式
 						    </div>
-						    <!--<div class="actions">
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-cloud-upload"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-wrench"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-trash"></i>
-						        </a>
-						        </div>-->
+						    <div class="tools">
+						    	<a href="javascript:;" class="collapse"> </a>
+						    </div>
 						</div>
 						<div class="portlet-body">
-							<div id="pie_bar3" style="height:500px;"></div>
+							<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_3">
+							<thead>
+							<tr>
+								<th width="80%"> 四步模式 </th>
+								<th> 频数 </th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td>万用金申请(IVR) -> 万用金申请(CSR) -> 手机动态密码验证(CSR) -> 在线密码验证(CSR)</td>
+									<td>632</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>分期交易查询(CSR) -> 万用金申请(CSR) -> 手机动态密码验证(CSR) -> 在线密码验证(CSR)</td>
+									<td>434</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>万用金金额试算(CSR) -> 万用金申请(CSR) -> 手机动态密码验证(CSR) -> 在线密码验证(CSR)</td>
+									<td>388</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>卡片激活(IVR) -> 卡片激活(CSR) -> 手机动态密码验证(CSR) -> 会议重置密码(CSR)</td>
+									<td>360</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额(IVR) -> 万用金申请(IVR) -> 万用金申请(CSR) -> 分期交易查询(CSR)</td>
+									<td>343</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>万用金申请(IVR) -> 手机动态密码验证(CSR) -> 在线密码验证(CSR) -> 万用金金额试算(CSR)</td>
+									<td>339</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>万用金申请(CSR) -> 手机动态密码验证(CSR) -> 在线密码验证(CSR) -> 万用金金额试算(CSR)</td>
+									<td>339</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>万用金申请(IVR) -> 万用金申请(CSR) -> 手机动态密码验证(CSR) -> 万用金金额试算(CSR)</td>
+									<td>293</td>
+								</tr>
+							</tbody>
+							</table>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<!--end content-->
         </div></div></div>
@@ -257,11 +371,10 @@ License: You must have a valid license purchased only from themeforest(the above
     		function reflash(id)
     		{
     			$("#"+id).empty();
-    			var num = Math.ceil(Math.random()*50);
-    			var temp = "<span data-counter=\"counterup\" data-value=\"500\">0</span>";
-    			alert(temp);
+    			var num = Math.ceil(Math.random()*5000);
+    			var temp = "<span id='counterup"+num+"' data-counter=\"counterup\" data-value=\""+num+"\">0</span>";
                 $("#"+id).append(temp); 
-                $("#"+id).counterUp();
+                $("#counterup"+num).counterUp();
     		}
     		function RndNum(n){
 				var rnd="";
@@ -279,212 +392,94 @@ License: You must have a valid license purchased only from themeforest(the above
 				}
 			}
 			jQuery(document).ready(function(){
+				TableDatatablesManaged.init();
 				$('.datepicker-default').datepicker({
 			        todayHighlight: true
 			    });
-				require.config(
-				{
-					paths:
-					{
-						echarts:"../assets/global/plugins/echarts/"
-					}
-				}),
-				require(
-				["echarts",
-				 "echarts/chart/pie",
-				 "echarts/chart/bar"
-				],
-				function(e){
-					var a=e.init(document.getElementById("pie_bar1"));
-					a.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["IVR类来电数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-						yAxis:[{
-								type:"category",
-								data:['信用卡业务','存款业务','咨询','投诉','贷款业务','其他']}],
-						xAxis:[{type:"value",splitArea:{show:!0}}],
-						series:[{
-								name:"IVR类来电数量",
-								type:"bar",
-								data:[335,310,234,135,448,251,102]
-								}]
-					});
-					//		a.setOption({
-					//		tooltip : {
-					//	        trigger: 'item',
-					//	        formatter: "{a} <br/>{b} : {c} ({d}%)"
-					//	    },
-					//	    legend: {
-					//	        orient : 'vertical',
-					//	        x : 'left',
-					//	        data:['信用卡业务','存款业务','咨询','投诉','贷款业务','其他']
-					//	    },
-					//	    toolbox: {
-					//	        show : true,
-					//	        feature : {
-					//	            saveAsImage : {show: true}
-					//	        }
-					//	    },
-					//	    calculable : false,
-					//	    series : [
-					//	        {
-					//	            name:'访问来源',
-					//	            type:'pie',
-					//	            radius : [100, 140],
-					//	            
-					//	            // for funnel
-					//	            x: '60%',
-					//	            width: '35%',
-					//	            funnelAlign: 'left',
-					//	            max: 1048,
-					//	            
-					//	            data:[
-					//	                {value:335, name:'信用卡业务'},
-					//	                {value:310, name:'存款业务'},
-					//	                {value:234, name:'咨询'},
-					//	                {value:135, name:'投诉'},
-					//	                {value:1048, name:'百度'},
-					//	                {value:251, name:'贷款业务'},
-					//	                {value:102, name:'其他'}
-					//	            ]
-					//	        }
-					//	    ]
-					//	    });
-					var b=e.init(document.getElementById("pie_bar2"));
-					b.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["CSR类来电数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-						yAxis:[{
-								type:"category",
-								data:['信用卡业务','存款业务','咨询','投诉','贷款业务','其他']}],
-						xAxis:[{type:"value",splitArea:{show:!0}}],
-						series:[{
-								name:"CSR类来电数量",
-								type:"bar",
-								data:[135,110,434,535,351,102]
-								}]
-					});
-					//		b.setOption({
-					//		tooltip : {
-					//	        trigger: 'item',
-					//	        formatter: "{a} <br/>{b} : {c} ({d}%)"
-					//	    },
-					//	    legend: {
-					//	        orient : 'vertical',
-					//	        x : 'left',
-					//	        data:['信用卡业务','存款业务','咨询','投诉','贷款业务','其他']
-					//	    },
-					//	    toolbox: {
-					//	        show : true,
-					//	        feature : {
-					//	            saveAsImage : {show: true}
-					//	        }
-					//	    },
-					//	    calculable : false,
-					//	    series : [
-					//	        {
-					//	            name:'访问来源',
-					//	            type:'pie',
-					//	            radius : [100, 140],
-					//	            
-					//	            // for funnel
-					//	            x: '60%',
-					//	            width: '35%',
-					//	            funnelAlign: 'left',
-					//	            max: 1048,
-					//	            
-					//	            data:[
-					//	                {value:135, name:'信用卡业务'},
-					//	                {value:110, name:'存款业务'},
-					//	                {value:434, name:'咨询'},
-					//	                {value:535, name:'投诉'},
-					//	                {value:351, name:'贷款业务'},
-					//	                {value:102, name:'其他'}
-					//	            ]
-					//	        }
-					//	    ]
-					//	    });	
-					var c=e.init(document.getElementById("pie_bar3"));
-					c.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["IVR&CSR来电数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-						xAxis:[{
-								type:"category",
-								data:['IVR信用卡业务','IVR存款业务','CSR咨询','CSR投诉','IVR贷款业务','CSR其他','CSR信用卡业务','CSR存款业务','IVR咨询','IVR投诉','CSR贷款业务','IVR其他']}],
-						yAxis:[{type:"value",splitArea:{show:!0}}],
-						series:[{
-								name:"IVR&CSR来电数量",
-								type:"bar",
-								data:[335,310,234,135,448,251,302,520,129,256,12,21],
-								itemStyle:{
-				                	normal:{
-				                    	color: function(params) {
-				                    			return '#B5C334';
-				                    		}
-				                		}
-				                	}
-								}]
-					});
-					//		c.setOption({
-					//		tooltip : {
-					//	        trigger: 'item',
-					//	        formatter: "{a} <br/>{b} : {c} ({d}%)"
-					//	    },
-					//	    legend: {
-					//	        orient : 'vertical',
-					//	        x : 'left',
-					//	        data:['IVR信用卡业务','IVR存款业务','CSR咨询','CSR投诉','IVR贷款业务','CSR其他','CSR信用卡业务','CSR存款业务','IVR咨询','IVR投诉','CSR贷款业务','IVR其他']
-					//	    },
-					//	    toolbox: {
-					//	        show : true,
-					//	        feature : {
-					//	            saveAsImage : {show: true}
-					//	        }
-					//	    },
-					//	    calculable : false,
-					//	    series : [
-					//	        {
-					//	            name:'访问来源',
-					//	            type:'pie',
-					//	            radius : [100, 140],
-					//	            
-					//	            // for funnel
-					//	            x: '60%',
-					//	            width: '35%',
-					//	            funnelAlign: 'left',
-					//	            max: 1048,
-					//	            
-					//	            data:[
-					//	                {value:335, name:'IVR信用卡业务'},
-					//	                {value:310, name:'IVR存款业务'},
-					//	                {value:234, name:'CSR咨询'},
-					//	                {value:135, name:'CSR投诉'},
-					//	                {value:1048, name:'IVR贷款业务'},
-					//	                {value:251, name:'CSR其他'},
-					//	                {value:302, name:'CSR信用卡业务'},
-					//	                {value:520, name:'CSR存款业务'},
-					//	                {value:129, name:'IVR咨询'},
-					//	                {value:256, name:'IVR投诉'},
-					//	                {value:12, name:'CSR贷款业务'},
-					//	                {value:21, name:'IVR其他'}
-					//	            ]
-					//	        }
-					//	    ]
-					//	    });
-				})
 			});
+			var TableDatatablesManaged=function(){
+a=function(){
+	var e=$("#sample_1");
+	e.dataTable({
+		language:{aria:{sortAscending:": activate to sort column ascending",sortDescending:": activate to sort column descending"},
+				  emptyTable:"No data available in table",info:"Showing _START_ to _END_ of _TOTAL_ records",
+				  infoEmpty:"No records found",infoFiltered:"(filtered1 from _MAX_ total records)",
+				  lengthMenu:"Show _MENU_",
+				  search:"Search:",
+				  zeroRecords:"No matching records found",
+				  paginate:{previous:"Prev",next:"Next",last:"Last",first:"First"}
+		},
+		bStateSave:!0,
+		pagingType:"bootstrap_extended",
+		lengthMenu:[[5,15,20,-1],[5,15,20,"All"]],
+		pageLength:5,
+		columnDefs:[{orderable:!1,targets:[0]},{searchable:!0,targets:[0]}],
+		order:[[1,"desc"]]
+	});
+	jQuery("#sample_1_wrapper");
+	e.find(".group-checkable").change(function(){
+		var e=jQuery(this).attr("data-set"),a=jQuery(this).is(":checked");
+		jQuery(e).each(function(){
+			a?$(this).prop("checked",!0):$(this).prop("checked",!1)}
+		),
+		jQuery.uniform.update(e)})
+},
+
+b=function(){
+	var e=$("#sample_2");
+	e.dataTable({
+		language:{aria:{sortAscending:": activate to sort column ascending",sortDescending:": activate to sort column descending"},
+				  emptyTable:"No data available in table",info:"Showing _START_ to _END_ of _TOTAL_ records",
+				  infoEmpty:"No records found",infoFiltered:"(filtered1 from _MAX_ total records)",
+				  lengthMenu:"Show _MENU_",
+				  search:"Search:",
+				  zeroRecords:"No matching records found",
+				  paginate:{previous:"Prev",next:"Next",last:"Last",first:"First"}
+		},
+		bStateSave:!0,
+		pagingType:"bootstrap_extended",
+		lengthMenu:[[5,15,20,-1],[5,15,20,"All"]],
+		pageLength:5,
+		columnDefs:[{orderable:!1,targets:[0]},{searchable:!0,targets:[0]}],
+		order:[[1,"desc"]]
+	});
+	jQuery("#sample_2_wrapper");
+	e.find(".group-checkable").change(function(){
+		var e=jQuery(this).attr("data-set"),a=jQuery(this).is(":checked");
+		jQuery(e).each(function(){
+			a?$(this).prop("checked",!0):$(this).prop("checked",!1)}
+		),
+		jQuery.uniform.update(e)})
+},
+c=function(){
+	var e=$("#sample_3");
+	e.dataTable({
+		language:{aria:{sortAscending:": activate to sort column ascending",sortDescending:": activate to sort column descending"},
+				  emptyTable:"No data available in table",info:"Showing _START_ to _END_ of _TOTAL_ records",
+				  infoEmpty:"No records found",infoFiltered:"(filtered1 from _MAX_ total records)",
+				  lengthMenu:"Show _MENU_",
+				  search:"Search:",
+				  zeroRecords:"No matching records found",
+				  paginate:{previous:"Prev",next:"Next",last:"Last",first:"First"}
+		},
+		bStateSave:!0,
+		pagingType:"bootstrap_extended",
+		lengthMenu:[[5,15,20,-1],[5,15,20,"All"]],
+		pageLength:5,
+		columnDefs:[{orderable:!1,targets:[0]},{searchable:!0,targets:[0]}],
+		order:[[1,"desc"]]
+	});
+	jQuery("#sample_3_wrapper");
+	e.find(".group-checkable").change(function(){
+		var e=jQuery(this).attr("data-set"),a=jQuery(this).is(":checked");
+		jQuery(e).each(function(){
+			a?$(this).prop("checked",!0):$(this).prop("checked",!1)}
+		),
+		jQuery.uniform.update(e)})
+}
+return{init:function(){
+	jQuery().dataTable&&(a(),b(),c())}
+}}();
       	</script>
     </body>
 

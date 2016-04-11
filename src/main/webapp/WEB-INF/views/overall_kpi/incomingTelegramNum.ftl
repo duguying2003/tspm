@@ -106,14 +106,14 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 总来电数量分析
+                    <h3 class="page-title"> 当日来电情况
                         <small>2016/03/01-2016/03/02</small><br/>
                         <small></small>
                     </h3>
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
                     <div class="panel panel-inverse">
-			    <div class="panel-body p-b-5">
+			    <!--<div class="panel-body p-b-5">
 			        <div class="btn-toolbar simply-filter">
 						<div class="btn-group dropdown">
 		                    <button class="btn btn-white btn-sm dropdown-toggle" data-toggle="dropdown">
@@ -121,11 +121,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		                    </button>
 		                </div>
 		                <button class="btn1 btn btn-sm btn-default btn-primary" id="time5">昨天</button>
-		                <button class="btn1 btn btn-sm btn-default" id="time4">本周</button>
-		                <button class="btn1 btn btn-sm btn-default" id="time3">本月</button>
-		                <button class="btn1 btn btn-sm btn-default" id="time2">本季度</button>
-		                <button class="btn1 btn btn-sm btn-default" id="time1">本年</button>
-		                <a onclick="showDate();" class="btn btn-sm btn-default">选择时间段</a>
+		                <a onclick="showDate();" class="btn btn-sm btn-default">选择时间</a>
 					</div>
 					<div id="datediv" class="date-range-box row" style="display:none">
 						<div class="col-md-6 col-xs-12">
@@ -133,8 +129,6 @@ License: You must have a valid license purchased only from themeforest(the above
 		                        <div class="col-md-9 col-xs-9 m-b-10">
 		                        	<div class="input-group input-daterange">
 		                        	    <input type="text" class="form-control input-sm datepicker-default" name="start" placeholder="Date Start" />
-		                        	    <span class="input-group-addon">至</span>
-		                        	    <input type="text" class="form-control input-sm datepicker-default" name="end" placeholder="Date End" />
 		                        	</div>
 		                        </div>
 		                        <div class="col-md-3 col-xs-3">
@@ -143,11 +137,11 @@ License: You must have a valid license purchased only from themeforest(the above
 		                    </div>
 						</div>
 					</div>
-			    </div>
+			    </div>-->
 			</div>
 			<!--begin content-->
 			<div class="row">
-            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 	<div class="dashboard-stat blue">
                     	<div class="visual">
                         	<i class="fa fa-comments"></i>
@@ -158,12 +152,12 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                             <div class="desc"> 总来电数 </div>
                         </div>
-                        <a class="more" href="javascript:reflash('allphonenum');"> View more
+                        <a class="more" href="javascript:reflash('allphonenum');"> 刷新
                         	<i class="m-icon-swapright m-icon-white"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 	<div class="dashboard-stat red">
                     	<div class="visual">
                         	<i class="fa fa-bar-chart-o"></i>
@@ -174,15 +168,32 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                             <div class="desc"> 总来电人数 </div>
                         </div>
-                        <a class="more" href="javascript:reflash('allhumnum');"> View more
+                        <a class="more" href="javascript:reflash('allhumnum');"> 刷新
                         	<i class="m-icon-swapright m-icon-white"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 	<div class="dashboard-stat green">
                     	<div class="visual">
                         	<i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="details">
+                        	<div id="humavgtime" class="number">
+                            	<span data-counter="counterup" data-value="45">0</span>秒
+                            </div>
+                            <div class="desc"> 平均通话时长
+                            </div>
+                        </div>
+                        <a class="more" href="javascript:reflash('humavgtime');"> 刷新
+                        	<i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                	<div class="dashboard-stat yellow-gold">
+                    	<div class="visual">
+                        	<i class="fa fa-users"></i>
                         </div>
                         <div class="details">
                         	<div id="humavgnum" class="number">
@@ -191,12 +202,114 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="desc"> 单用户平均来电数
                             </div>
                         </div>
-                        <a class="more" href="javascript:reflash('humavgnum');"> View more
+                        <a class="more" href="javascript:reflash('humavgnum');"> 刷新
+                        	<i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                	<div class="dashboard-stat grey-mint">
+                    	<div class="visual">
+                        	<i class="fa fa-cogs"></i>
+                        </div>
+                        <div class="details">
+                        	<div id="pureivrnum" class="number">
+                            	<span data-counter="counterup" data-value="8456">0</span>
+                            </div>
+                            <div class="desc"> 纯IVR来电数
+                            </div>
+                        </div>
+                        <a class="more" href="javascript:reflash('pureivrnum');"> 刷新
+                        	<i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                	<div class="dashboard-stat purple">
+                    	<div class="visual">
+                        	<i class="fa fa-clone"></i>
+                        </div>
+                        <div class="details">
+                        	<div id="ivrtocsrnum" class="number">
+                            	<span data-counter="counterup" data-value="5678">0</span>
+                            </div>
+                            <div class="desc"> IVR转CSR数量
+                            </div>
+                        </div>
+                        <a class="more" href="javascript:reflash('ivrtocsrnum');"> 刷新
+                        	<i class="m-icon-swapright m-icon-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                	<div class="dashboard-stat yellow-gold">
+                    	<div class="visual">
+                        	<i class="fa fa-globe"></i>
+                        </div>
+                        <div class="details">
+                        	<div id="purecsrnum" class="number">
+                            	<span data-counter="counterup" data-value="3093">0</span>
+                            </div>
+                            <div class="desc"> 直接转CSR数量
+                            </div>
+                        </div>
+                        <a class="more" href="javascript:reflash('purecsrnum');"> 刷新
                         	<i class="m-icon-swapright m-icon-white"></i>
                         </a>
                     </div>
                 </div>
             </div>
+            <div class="row">
+				<div class="col-md-6">
+					<div class="portlet light portlet-fit ">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class=" icon-layers font-green"></i>
+						        <span class="caption-subject font-green bold uppercase">IVR业务节点访问量</span>
+						    </div>
+						    <!--<div class="actions">
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-cloud-upload"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-wrench"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-trash"></i>
+						        </a>
+						        </div>-->
+						</div>
+						<div class="portlet-body">
+							<div id="bar_bar1" style="height:500px;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="portlet light portlet-fit ">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class=" icon-layers font-green"></i>
+						        <span class="caption-subject font-green bold uppercase">CSR业务节点访问量</span>
+						    </div>
+						    <!--<div class="actions">
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-cloud-upload"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-wrench"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-trash"></i>
+						        </a>
+						        </div>-->
+						</div>
+						<div class="portlet-body">
+							<div id="bar_bar2" style="height:500px;"></div>
+						</div>
+					</div>
+				</div>		
+			</div>
             <div class="row">
 				<div class="col-md-12">
 					<div class="portlet light portlet-fit ">
@@ -293,7 +406,8 @@ License: You must have a valid license purchased only from themeforest(the above
 				}),
 				require(
 				["echarts",
-				 "echarts/chart/line"
+				 "echarts/chart/line",
+				 "echarts/chart/bar"
 				],
 				function(e){
 					var l=e.init(document.getElementById("line_bar1"));
@@ -302,7 +416,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						        trigger: 'axis'
 						    },
 						    legend: {
-						        data:['单日来电数','来电人数','单用户平均来电数']
+						        data:['来电数量']
 						    },
 						    toolbox: {
 						        show : true,
@@ -315,7 +429,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						        {
 						            type : 'category',
 						            boundaryGap : false,
-						            data : ['2016-2-29','2016-3-1','2016-3-2','2016-3-3','2016-3-4','2016-3-5','2016-3-6']
+						            data : ['0:00','1:00','2:00','3:00','4:00','5:00','6:00','7:00','8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00']
 						        }
 						    ],
 						    yAxis : [
@@ -325,29 +439,59 @@ License: You must have a valid license purchased only from themeforest(the above
 						    ],
 						    series : [
 						        {
-						            name:'单日来电数',
+						            name:'来电数量',
 						            type:'line',
 						            smooth:true,
 						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[120, 132, 101, 134, 90, 230, 210]
-						        },
-						        {
-						            name:'来电人数',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[220, 182, 191, 234, 290, 330, 310]
-						        },
-						        {
-						            name:'单用户平均来电数',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[150, 232, 201, 154, 190, 330, 410]
+						            data:[0, 2, 1, 4, 0, 30, 210,220, 182, 191, 234, 290, 330, 310,150, 232, 201, 154, 190, 330, 410,150,80,60]
 						        }
 						    ]
 						    });
-							
+					var a=e.init(document.getElementById("bar_bar1"));
+					a.setOption({
+						title:{text:'2016/02/29-2016/03/06'},
+						tooltip:{trigger:"axis"},
+						legend:{data:["IVR业务节点访问数量"]},
+						toolbox:{show:!0,
+								 feature:{mark:{show:!1},
+								 saveAsImage:{show:!0}}},
+						yAxis:[{
+								type:"category",
+								data:['故障报修','办理信用卡','信用卡挂失','业务咨询','投诉','申请贷款','取款','个人理财','信托基金业务','捐款']}],
+						xAxis:[{type:"value",splitArea:{show:!0}}],
+						series:[{
+								name:"IVR业务节点访问数量",
+								type:"bar",
+								data:[10,50,100,130,198,200,250,290,320,323]
+								}]
+					});
+					var b=e.init(document.getElementById("bar_bar2"));
+					b.setOption({
+						title:{text:'2016/02/29-2016/03/06'},
+						tooltip:{trigger:"axis"},
+						legend:{data:["CSR业务节点访问数量"]},
+						toolbox:{show:!0,
+								 feature:{mark:{show:!1},
+								 saveAsImage:{show:!0}}},
+								 yAxis:[{
+									 type:"category",
+									 data:['办理信用卡','信用卡挂失','业务咨询','故障报修','取款','投诉','申请贷款','个人理财','信托基金业务','捐款']}],
+								 xAxis:[{type:"value",splitArea:{show:!0}}],
+								 
+								 series:[
+								 {
+								 	name:"CSR业务节点访问数量",
+									type:"bar",
+									itemStyle:{
+				                	normal:{
+				                    	color: function(params) {
+				                    			return '#B5C334';
+				                    		}
+				                		}
+				                	},
+									data:[1,5,10,30,98,100,150,190,220,223]
+								 }]
+					});		
 				})
 			});
       	</script>

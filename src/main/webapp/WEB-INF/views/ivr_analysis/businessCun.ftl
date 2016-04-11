@@ -73,7 +73,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>IVR 分析  </span>
+                                <span>来电目的分析  </span>
                                 
                             </li>
                         </ul>
@@ -106,7 +106,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 业务数量统计
+                    <h3 class="page-title"> 来电具体业务统计
                         <small>2016/03/01-2016/03/02</small><br/>
                         <small></small>
                     </h3>
@@ -192,6 +192,30 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 						<div class="portlet-body">
 							<div id="bar_bar2" style="height:500px;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="portlet light portlet-fit ">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class=" icon-layers font-green"></i>
+						        <span class="caption-subject font-green bold uppercase">IVR和CSR中均办理的业务类别Top 10</span>
+						    </div>
+						    <!--<div class="actions">
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-cloud-upload"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-wrench"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-trash"></i>
+						        </a>
+						        </div>-->
+						</div>
+						<div class="portlet-body">
+							<div id="bar_bar3" style="height:500px;"></div>
 						</div>
 					</div>
 				</div>	
@@ -285,25 +309,64 @@ License: You must have a valid license purchased only from themeforest(the above
 						        }
 						    },
 						    calculable : true,
-						    xAxis : [
+						    yAxis : [
 						        {
 						            type : 'category',
 						            data : ['故障报修','办理信用卡','信用卡挂失','业务咨询','投诉','申请贷款','取款','个人理财','信托基金业务','捐款']
 						        }
 						    ],
-						    yAxis : [
+						    xAxis : [
 						        {type:"value",splitArea:{show:!0}}
 						    ],
 						    series : [
 						        {
 						            name:'办理业务数',
 						            type:'bar',
-						            data:[340, 332, 301, 234, 233, 230, 210,200,190,180]
+						            data:[180, 190, 200, 210, 230, 233, 234,301,332,340]
 						        }
 						    ]
 						    });
 					var b=e.init(document.getElementById("bar_bar2"));
 							b.setOption({
+							tooltip : {
+						        trigger: 'axis'
+						    },
+						    legend: {
+						        data:['办理业务数']
+						    },
+						    toolbox: {
+						        show : true,
+						        feature : {
+						            saveAsImage : {show: true}
+						        }
+						    },
+						    calculable : true,
+						    yAxis : [
+						        {
+						            type : 'category',
+						            data : ['信用卡类','贷款类','理财类','咨询类','建议与投诉','其他']
+						        }
+						    ],
+						    xAxis : [
+						        {type:"value",splitArea:{show:!0}}
+						    ],
+						    series : [
+						        {
+						            name:'办理业务数',
+						            type:'bar',
+						            itemStyle:{
+				                	normal:{
+				                    	color: function(params) {
+				                    			return '#B5C334';
+				                    		}
+				                		}
+				                	},
+						            data:[230, 233, 234, 301, 332, 340]
+						        }
+						    ]
+						    });	
+					var c=e.init(document.getElementById("bar_bar3"));
+							c.setOption({
 							tooltip : {
 						        trigger: 'axis'
 						    },
@@ -333,7 +396,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						            itemStyle:{
 				                	normal:{
 				                    	color: function(params) {
-				                    			return '#B5C334';
+				                    			return '#F000FF';
 				                    		}
 				                		}
 				                	},

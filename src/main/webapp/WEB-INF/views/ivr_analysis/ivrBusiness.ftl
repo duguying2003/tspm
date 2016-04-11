@@ -56,7 +56,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN CONTAINER -->
         <div class="page-container">
             <#include "../common/left-menu.ftl"/>
-            <input id="side-menu" type="hidden" value="side-8" />
+            <input id="side-menu" type="hidden" value="side-6" />
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
@@ -106,7 +106,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 二次来电分析
+                    <h3 class="page-title"> IVR来电业务统计
                         <small>2016/03/01-2016/03/02</small><br/>
                         <small></small>
                     </h3>
@@ -146,132 +146,13 @@ License: You must have a valid license purchased only from themeforest(the above
 			    </div>
 			</div>
 			<!--begin content-->
-			<div class="row">
-            	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat blue">
-                    	<div class="visual">
-                        	<i class="fa fa-comments"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allphonenum" class="number">
-                            	<span data-counter="counterup" data-value="1349">0</span>
-                            </div>
-                            <div class="desc"> 二次来电总数 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allphonenum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat green-sharp">
-                    	<div class="visual">
-                        	<i class="fa fa-bank"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum" class="number">
-                            	<span data-counter="counterup" data-value="50">0</span> %
-                            </div>
-                            <div class="desc"> 二次来电占比 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red">
-                    	<div class="visual">
-                        	<i class="fa fa-bar-chart-o"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum" class="number">
-                            	<span data-counter="counterup" data-value="1205">0</span> 
-                            </div>
-                            <div class="desc"> 二次来电客户数 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat green">
-                    	<div class="visual">
-                        	<i class="fa fa-shopping-cart"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum" class="number">
-                            	<span data-counter="counterup" data-value="35">0</span> %
-                            </div>
-                            <div class="desc"> 二次来电客户数占比
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
             <div class="row">
-				<div class="col-md-12">
-					<div class="portlet light portlet-fit ">
-						<div class="portlet-title">
-							<div class="caption">
-						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">二次来电数量趋势图</span>
-						    </div>
-						    <!--<div class="actions">
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-cloud-upload"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-wrench"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-trash"></i>
-						        </a>
-						        </div>-->
-						</div>
-						<div class="portlet-body">
-							<div id="line_bar1" style="height:500px;"></div>
-						</div>
-					</div>
-				</div>	
-			</div>
-            <div class="row">
-				<div class="col-md-12">
-					<div class="portlet light portlet-fit ">
-						<div class="portlet-title">
-							<div class="caption">
-						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">二次来电办理业务节点</span>
-						    </div>
-						    <!--<div class="actions">
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-cloud-upload"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-wrench"></i>
-						        </a>
-						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-						        	<i class="icon-trash"></i>
-						        </a>
-						        </div>-->
-						</div>
-						<div class="portlet-body">
-							<div id="bar_bar1" style="height:500px;"></div>
-						</div>
-					</div>
-				</div>	
-			</div>
-			<div class="row">
 				<div class="col-md-6">
 					<div class="portlet light portlet-fit ">
 						<div class="portlet-title">
 							<div class="caption">
 						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">二次来电与一次来电办理相同的业务节点</span>
+						        <span class="caption-subject font-green bold uppercase">纯IVR来电业务类别</span>
 						    </div>
 						    <!--<div class="actions">
 						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -295,7 +176,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div class="portlet-title">
 							<div class="caption">
 						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">二次来电与一次来电办理不同的业务节点</span>
+						        <span class="caption-subject font-green bold uppercase">纯IVR来电业务节点</span>
 						    </div>
 						    <!--<div class="actions">
 						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -310,10 +191,11 @@ License: You must have a valid license purchased only from themeforest(the above
 						        </div>-->
 						</div>
 						<div class="portlet-body">
-							<div id="bar_bar3" style="height:500px;"></div>
+							<div id="bar_bar1" style="height:500px;"></div>
 						</div>
 					</div>
-				</div>	
+				</div>
+					
 			</div>
 			<!--end content-->
         </div></div></div>
@@ -352,10 +234,11 @@ License: You must have a valid license purchased only from themeforest(the above
     		function reflash(id)
     		{
     			$("#"+id).empty();
-    			var num = Math.ceil(Math.random()*5000);
-    			var temp = "<span id='counterup"+num+"' data-counter=\"counterup\" data-value=\""+num+"\">0</span>";
+    			var num = Math.ceil(Math.random()*50);
+    			var temp = "<span data-counter=\"counterup\" data-value=\"500\">0</span>";
+    			alert(temp);
                 $("#"+id).append(temp); 
-                $("#counterup"+num).counterUp();
+                $("#"+id).counterUp();
     		}
     		function RndNum(n){
 				var rnd="";
@@ -385,55 +268,10 @@ License: You must have a valid license purchased only from themeforest(the above
 				}),
 				require(
 				["echarts",
-				 "echarts/chart/line",
 				 "echarts/chart/bar"
 				],
 				function(e){
-					var l=e.init(document.getElementById("line_bar1"));
-							l.setOption({
-							tooltip : {
-						        trigger: 'axis'
-						    },
-						    legend: {
-						        data:['单日二次来电数占比','二次来电人数占比']
-						    },
-						    toolbox: {
-						        show : true,
-						        feature : {
-						            saveAsImage : {show: true}
-						        }
-						    },
-						    calculable : true,
-						    xAxis : [
-						        {
-						            type : 'category',
-						            boundaryGap : false,
-						            data : ['2016-2-29','2016-3-1','2016-3-2','2016-3-3','2016-3-4','2016-3-5','2016-3-6']
-						        }
-						    ],
-						    yAxis : [
-						        {
-						            type : 'value'
-						        }
-						    ],
-						    series : [
-						        {
-						            name:'单日二次来电数占比',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[20, 32, 10, 33, 40, 63, 21]
-						        },
-						        {
-						            name:'二次来电人数占比',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[22, 18, 19, 44, 29, 73, 31]
-						        }
-						    ]
-						    });
-					var a=e.init(document.getElementById("bar_bar2"));
+					var a=e.init(document.getElementById("bar_bar1"));
 							a.setOption({
 							tooltip : {
 						        trigger: 'axis'
@@ -451,7 +289,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						    yAxis : [
 						        {
 						            type : 'category',
-						            data : ['故障报修','业务咨询','申请贷款','个人理财','信托基金业务']
+						            data : ['故障报修','办理信用卡','信用卡挂失','业务咨询','投诉','申请贷款','取款','个人理财','信托基金业务','捐款']
 						        }
 						    ],
 						    xAxis : [
@@ -461,11 +299,11 @@ License: You must have a valid license purchased only from themeforest(the above
 						        {
 						            name:'办理业务数',
 						            type:'bar',
-						            data:[230, 233, 234, 301, 332, 340]
+						            data:[180, 190, 200, 210, 230, 233, 234,301,332,340]
 						        }
 						    ]
 						    });
-					var b=e.init(document.getElementById("bar_bar3"));
+					var b=e.init(document.getElementById("bar_bar2"));
 							b.setOption({
 							tooltip : {
 						        trigger: 'axis'
@@ -483,49 +321,10 @@ License: You must have a valid license purchased only from themeforest(the above
 						    yAxis : [
 						        {
 						            type : 'category',
-						            data : ['办理信用卡','信用卡挂失','信托基金业务','捐款','小额贷款']
+						            data : ['信用卡类','贷款类','理财类','咨询类','建议与投诉','其他']
 						        }
 						    ],
 						    xAxis : [
-						        {type:"value",splitArea:{show:!0}}
-						    ],
-						    series : [
-						        {
-						            name:'办理业务数',
-						            type:'bar',
-						            itemStyle:{
-				                	normal:{
-				                    	color: function(params) {
-				                    			return '#8a2be2';
-				                    		}
-				                		}
-				                	},
-						            data:[233, 234, 301, 332, 340]
-						        }
-						    ]
-						    });		
-					 var c=e.init(document.getElementById("bar_bar1"));
-							c.setOption({
-							tooltip : {
-						        trigger: 'axis'
-						    },
-						    legend: {
-						        data:['办理业务数']
-						    },
-						    toolbox: {
-						        show : true,
-						        feature : {
-						            saveAsImage : {show: true}
-						        }
-						    },
-						    calculable : true,
-						    xAxis : [
-						        {
-						            type : 'category',
-						            data : ['故障报修','办理信用卡','信用卡挂失','业务咨询','小额贷款','申请贷款','取款','个人理财','信托基金业务','捐款']
-						        }
-						    ],
-						    yAxis : [
 						        {type:"value",splitArea:{show:!0}}
 						    ],
 						    series : [
@@ -539,10 +338,10 @@ License: You must have a valid license purchased only from themeforest(the above
 				                    		}
 				                		}
 				                	},
-						            data:[340, 332, 301, 234, 233,220,200,190,190,160,156]
+						            data:[230, 233, 234, 301, 332, 340]
 						        }
 						    ]
-						    });
+						    });		
 				})
 			});
       	</script>

@@ -2,6 +2,7 @@ package com.edreaminfo.ivr.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/ivrandcsrAnalysis")
@@ -19,6 +20,13 @@ public class IVRAndCSRAnalysisController {
 		ModelAndView mv=new ModelAndView();
 		mv.setViewName("ivr_csr_analysis/sequence");
 		return mv;
+	}
+	@RequestMapping("toSequence")
+	@ResponseBody
+	public Object toSequence()
+	{
+		
+		return null;
 	}
 	@RequestMapping("toIncomingTelegramLinkAnalysis")
 	public ModelAndView toIncomingTelegramLinkAnalysis()

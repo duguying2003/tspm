@@ -5,7 +5,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="#">
-                        <img src="../assets/layouts/layout/img/logo2.png" alt="logo" class="logo-default" /> </a>
+                        <img src="../assets/layouts/layout/img/logo3.png" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler"> </div>
                 </div>
                 <!-- END LOGO -->
@@ -13,6 +13,9 @@
                 <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
                 <!-- END RESPONSIVE MENU TOGGLER -->
                 <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="page-logo" style="width:800px;line-height:46px;">
+                    <font color="#FFFFFF" style="font-family:'微软雅黑';" size="4px">呼叫中心语音系统 客户行为分析与决策支持平台</font>
+                </div>
                 <div class="top-menu">
                     <ul class="nav navbar-nav pull-right">
                         <!--<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">

@@ -87,7 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN CONTAINER -->
         <div class="page-container">
             <#include "../common/left-menu.ftl"/>
-            <input id="side-menu" type="hidden" value="side-2" />
+            <input id="side-menu" type="hidden" value="side-11" />
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>总体绩效分析  </span>
+                                <span>IVR菜单路径优化  </span>
                                 
                             </li>
                         </ul>
@@ -137,7 +137,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 历史来电情况
+                    <h3 class="page-title"> 路径优化
                         <small>2016/03/01-2016/03/02</small>
                     </h3>
                     <!-- END PAGE TITLE-->
@@ -173,292 +173,78 @@ License: You must have a valid license purchased only from themeforest(the above
 		                    </div>
 						</div>
 					</div>
+					<br/>
+					<div class="btn-toolbar simply-filter">
+                        <div class="col-md-4">
+                        <label class="control-label" for="title">客户群选择:</label>
+                        	<select id="growl_delay" class="form-control input-small input-inline">
+                        		<option value="0">所有</option>
+                            	<option value="5000">目标客户群1</option>
+                                <option value="10000">目标客户群2</option>
+                                <option value="12000">目标客户群3</option>
+                                <option value="15000">目标客户群4</option>
+                            </select>
+                        <label class="control-label" for="title">算法选择:</label>
+                        <select class="form-control input-small input-inline">
+							<option>算法1</option>
+							<option>算法2</option>
+							<option>算法3</option>
+						</select>
+						<button class="btn btn-sm btn-primary" style="float:right" onclick="toData()">确定</button>
+						</div>
+					</div>
 			    </div>
 			</div>
 			<!--begin content-->
-			<div class="row col-md-12">
-            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat blue">
-                    	<div class="visual">
-                        	<i class="fa fa-comments"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allphonenum" class="number">
-                            	<span data-counter="counterup" data-value="1349">0</span>
-                            </div>
-                            <div class="desc"> 总来电数 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allphonenum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red-pink">
-                    	<div class="visual">
-                        	<i class="fa fa-bar-chart-o"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum" class="number">
-                            	<span data-counter="counterup" data-value="1205">0</span> 
-                            </div>
-                            <div class="desc"> 总来电人数 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat green">
-                    	<div class="visual">
-                        	<i class="fa fa-shopping-cart"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum" class="number">
-                            	<span data-counter="counterup" data-value="1245">0</span>
-                            </div>
-                            <div class="desc"> 单用户平均来电数
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat blue-hoki">
-                    	<div class="visual">
-                        	<i class="fa fa-cubes"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allphonenum2" class="number">
-                            	<span data-counter="counterup" data-value="2356">0</span>
-                            </div>
-                            <div class="desc"> 纯IVR来电数量 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allphonenum2');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red">
-                    	<div class="visual">
-                        	<i class="fa fa-bank"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum2" class="number">
-                            	<span data-counter="counterup" data-value="205">0</span> 
-                            </div>
-                            <div class="desc"> IVR转CSR数量 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum2');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat green-sharp">
-                    	<div class="visual">
-                        	<i class="fa fa-fax"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum2" class="number">
-                            	<span data-counter="counterup" data-value="1130">0</span>
-                            </div>
-                            <div class="desc"> 直接转CSR数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum2');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat grey-mint">
-                    	<div class="visual">
-                        	<i class="fa fa-cogs"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum3" class="number">
-                            	<span data-counter="counterup" data-value="8456">0</span>
-                            </div>
-                            <div class="desc"> 平均通话时长
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum3');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat purple">
-                    	<div class="visual">
-                        	<i class="fa fa-clone"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum4" class="number">
-                            	<span data-counter="counterup" data-value="5678">0</span>
-                            </div>
-                            <div class="desc"> 访问业务节点数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum4');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat yellow-gold">
-                    	<div class="visual">
-                        	<i class="fa fa-globe"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum5" class="number">
-                            	<span data-counter="counterup" data-value="3093">0</span>
-                            </div>
-                            <div class="desc"> IVR节点数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum5');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red-pink">
-                    	<div class="visual">
-                        	<i class="fa fa-database"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum3" class="number">
-                            	<span data-counter="counterup" data-value="1205">0</span> 
-                            </div>
-                            <div class="desc"> CSR节点数量 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum3');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-md-6">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">IVR业务节点访问量</span>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="portlet light portlet-fit ">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class=" icon-layers font-green"></i>
+						        <span class="caption-subject font-green bold uppercase">当前菜单</span>
+						    </div>
+						</div>
+						<div class="portlet-body">
+							<div>
+								<div id="myDiagram" style="height:500px;"></div>
+							</div>
 						</div>
 					</div>
-					<div class="portlet-body">
-						<div id="bar_bar1" style="height:500px;"></div>
-					</div>
 				</div>
-            </div>
-            <div class="col-md-6">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">CSR业务节点访问量</span>
+				<div class="col-md-6">
+					<div class="portlet light portlet-fit ">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class=" icon-layers font-green"></i>
+						        <span class="caption-subject font-green bold uppercase">优化后菜单</span>
+						    </div>
+						</div>
+						<div class="portlet-body">
+							<div>
+								<div id="myDiagram2" style="height:500px;"></div>
+							</div>
 						</div>
 					</div>
-					<div class="portlet-body">
-						<div id="bar_bar2" style="height:500px;"></div>
-					</div>
 				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">日来电数量与来电人数</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="line_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">小时来电数量与来电人数</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="line_bar2" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">一周来电图</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar3" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">过去12月来电图</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar4" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <!--<div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">业务占比</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="pie_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            <div class="row">
+			</div>
+			<div class="row">
 				<div class="col-md-12">
 					<div class="portlet light portlet-fit ">
 						<div class="portlet-title">
 							<div class="caption">
 						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">来电数量趋势图</span>
+						        <span class="caption-subject font-green bold uppercase">平均到达目标业务节点用时</span>
 						    </div>
 						</div>
 						<div class="portlet-body">
-							<div id="sankey1" align="center"></div>
+							<div>
+								<div id="bar_bar1" style="height:500px;"></div>
+							</div>
 						</div>
 					</div>
-				</div>	
-			</div>-->
+				</div>
+			</div>
 			<!--end content-->
         </div></div></div>
         <!-- END CONTAINER -->
@@ -492,6 +278,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="../assets/pages/scripts/bihisankey.js"></script>
         <script src="../assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
+        <script src="../assets/pages/scripts/go.js"></script>
         <!--private js-->
     	
     	<script type="text/javascript">
@@ -519,59 +306,233 @@ License: You must have a valid license purchased only from themeforest(the above
 					$("#datediv").css("display","none");
 				}
 			}
-			var ChartsAmcharts = function() {
-				var initChartSample1 = function() {
-		        var chart = AmCharts.makeChart("pie_bar1", {
-		            "type": "pie",
-		            "theme": "light",
-		
-		            "fontFamily": 'Open Sans',
-		            
-		            "color":    '#888',
-		
-		            "dataProvider": [{
-		                "country": "IVR业务占比",
-		                "value": 335,
-		                "axisColor": "#FF0F00"
-		            }, {
-		                "country": "CSR业务占比",
-		                "value": 310,
-		                "axisColor": "#00FF66"
-		            }, {
-		                "country": "IVR业务占比1",
-		                "value": 310,
-		                "axisColor": "#012543"
-		            }, {
-		                "country": "CSR业务占比1",
-		                "value": 310,
-		                "axisColor": "#F12548"
-		            }],
-		            "valueField": "value",
-		            "titleField": "country",
-		            "outlineAlpha": 0.4,
-		            "depth3D": 15,
-		            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-		            "angle": 30,
-		            "exportConfig": {
-		                menuItems: [{
-		                    icon: '/lib/3/images/export.png',
-		                    format: 'png'
-		                }]
-		            }
-		        });
-		        }
-		        return {
-			        //main function to initiate the module
+			function goInit() {
+			var $ = go.GraphObject.make; // for conciseness in defining templates
+			myDiagram = $(go.Diagram, "myDiagram", {
+				allowCopy : false,
+				initialContentAlignment : go.Spot.Center,
+				"draggingTool.dragsTree" : true,
+				"commandHandler.deletesTree" : true,
+				layout : $(go.TreeLayout, {
+					angle : 90,
+					arrangement : go.TreeLayout.ArrangementFixedRoots
+				}),
+				"undoManager.isEnabled" : true
+			});
+			myDiagram2 = $(go.Diagram, "myDiagram2", {
+				allowCopy : false,
+				initialContentAlignment : go.Spot.Center,
+				"draggingTool.dragsTree" : true,
+				"commandHandler.deletesTree" : true,
+				layout : $(go.TreeLayout, {
+					angle : 90,
+					arrangement : go.TreeLayout.ArrangementFixedRoots
+				}),
+				"undoManager.isEnabled" : true
+			});
+			// when the document is modified, add a "*" to the title and enable the "Save" button
+			var bluegrad = $(go.Brush, "Linear", {
+				0 : "white",
+				1 : "skyblue"
+			});
+			var greengrad = $(go.Brush, "Linear", {
+				0 : "white",
+				1 : "green"
+			});
+			var redgrad = $(go.Brush, "Linear", {
+				0 : "white",
+				1 : "red"
+			});
+			var yellowgrad = $(go.Brush, "Linear", {
+				0 : "yellow",
+				1 : "orange"
+			});
+			// each action is represented by a shape and some text
+			var actionTemplate = $(go.Panel, "Horizontal", $(go.Shape, {
+				width : 12,
+				height : 12
+			}, new go.Binding("figure"), new go.Binding("fill")), $(
+					go.TextBlock, new go.Binding("text")));
+			// each regular Node has body consisting of a title followed by a collapsible list of actions,
+			// controlled by a PanelExpanderButton, with a TreeExpanderButton underneath the body
+			myDiagram.nodeTemplate = // the default node template
+			$(go.Node, "Vertical", {
+				selectionObjectName : "BODY"
+			},
+			// the main "BODY" consists of a RoundedRectangle surrounding nested Panels
+			$(go.Panel, "Auto", {
+				name : "BODY"
+			}, $(go.Shape, "RoundedRectangle", {
+				fill : bluegrad
+			}, new go.Binding("fill"), new go.Binding("stroke")), $(go.Panel,
+					"Vertical",
+					// the title
+					$(go.TextBlock, {
+						font : "bold 12pt Arial"
+					}, new go.Binding("text", "question")),
+					// the optional list of actions
+					$(go.Panel, "Table", {
+						stretch : go.GraphObject.Horizontal,
+						visible : false
+					}, // not visible unless there is more than one action
+					new go.Binding("visible", "actions", function(acts) {
+						return (Array.isArray(acts) && acts.length > 0);
+					}),
+					// headered by a label and a PanelExpanderButton
+					$(go.TextBlock, "Steps", {
+						row : 0,
+						alignment : go.Spot.Left
+					}), $("PanelExpanderButton", "COLLAPSIBLE", // name of the object to make visible or invisible
+					{
+						row : 0,
+						alignment : go.Spot.Right
+					}),
+					// with the list data bound in the Vertical Panel
+					$(go.Panel, "Vertical", {
+						row : 1,
+						name : "COLLAPSIBLE", // identify to the PanelExpanderButton
+						padding : 2,
+						stretch : go.GraphObject.Horizontal, // take up whole available width
+						background : "white", // to distinguish from the node's body
+						defaultAlignment : go.Spot.Left, // thus no need to specify alignment on each element
+						itemTemplate : actionTemplate
+					// the Panel created for each item in Panel.itemArray
+					}, new go.Binding("itemArray", "actions") // bind Panel.itemArray to nodedata.actions
+					) // end inner Vertical Panel
+					) // end Table Panel
+			) // end outer Vertical Panel
+			), // end "BODY", an Auto Panel
+			$(go.Panel, // this is underneath the "BODY"
+			{
+				height : 15
+			}, // always this height, even if the TreeExpanderButton is not visible
+			$("TreeExpanderButton")));
 			
-			        init: function() {
+			myDiagram2.nodeTemplate = // the default node template
+			$(go.Node, "Vertical", {
+				selectionObjectName : "BODY"
+			},
+			// the main "BODY" consists of a RoundedRectangle surrounding nested Panels
+			$(go.Panel, "Auto", {
+				name : "BODY"
+			}, $(go.Shape, "RoundedRectangle", {
+				fill : bluegrad
+			}, new go.Binding("fill"), new go.Binding("stroke")), $(go.Panel,
+					"Vertical",
+					// the title
+					$(go.TextBlock, {
+						font : "bold 12pt Arial"
+					}, new go.Binding("text", "question")),
+					// the optional list of actions
+					$(go.Panel, "Table", {
+						stretch : go.GraphObject.Horizontal,
+						visible : false
+					}, // not visible unless there is more than one action
+					new go.Binding("visible", "actions", function(acts) {
+						return (Array.isArray(acts) && acts.length > 0);
+					}),
+					// headered by a label and a PanelExpanderButton
+					$(go.TextBlock, "Steps", {
+						row : 0,
+						alignment : go.Spot.Left
+					}), $("PanelExpanderButton", "COLLAPSIBLE", // name of the object to make visible or invisible
+					{
+						row : 0,
+						alignment : go.Spot.Right
+					}),
+					// with the list data bound in the Vertical Panel
+					$(go.Panel, "Vertical", {
+						row : 1,
+						name : "COLLAPSIBLE", // identify to the PanelExpanderButton
+						padding : 2,
+						stretch : go.GraphObject.Horizontal, // take up whole available width
+						background : "white", // to distinguish from the node's body
+						defaultAlignment : go.Spot.Left, // thus no need to specify alignment on each element
+						itemTemplate : actionTemplate
+					// the Panel created for each item in Panel.itemArray
+					}, new go.Binding("itemArray", "actions") // bind Panel.itemArray to nodedata.actions
+					) // end inner Vertical Panel
+					) // end Table Panel
+			) // end outer Vertical Panel
+			), // end "BODY", an Auto Panel
+			$(go.Panel, // this is underneath the "BODY"
+			{
+				height : 15
+			}, // always this height, even if the TreeExpanderButton is not visible
+			$("TreeExpanderButton")));
 			
-			            initChartSample1();
-			        }
+			// define a second kind of Node:
+			myDiagram.nodeTemplateMap.add("Terminal", $(go.Node, "Spot", $(
+					go.Shape, "StopSign", {
+						width : 40,
+						height : 40
+					}, new go.Binding("fill"), new go.Binding("stroke")), $(
+					go.TextBlock, new go.Binding("text"))));
+			myDiagram2.nodeTemplateMap.add("Terminal", $(go.Node, "Spot", $(
+					go.Shape, "StopSign", {
+						width : 40,
+						height : 40
+					}, new go.Binding("fill"), new go.Binding("stroke")), $(
+					go.TextBlock, new go.Binding("text"))));
+					
+			myDiagram.linkTemplate = $(go.Link, go.Link.Orthogonal, {
+				corner : 10
+			}, $(go.Shape, {
+				strokeWidth : 2
+			}), $(go.Shape, {
+				toArrow : "Standard"
+			}), $(go.TextBlock, go.Link.OrientUpright, {
+				background : "white",
+				visible : false, // unless the binding sets it to true for a non-empty string
+				segmentIndex : -2,
+				segmentOrientation : go.Link.None
+			}, new go.Binding("text", "answer"),
+			// hide empty string;
+			// if the "answer" property is undefined, visible is false due to above default setting
+			new go.Binding("visible", "answer", function(a) {
+				return (a ? true : false);
+			})));
+			myDiagram2.linkTemplate = $(go.Link, go.Link.Orthogonal, {
+				corner : 10
+			}, $(go.Shape, {
+				strokeWidth : 2
+			}), $(go.Shape, {
+				toArrow : "Standard"
+			}), $(go.TextBlock, go.Link.OrientUpright, {
+				background : "white",
+				visible : false, // unless the binding sets it to true for a non-empty string
+				segmentIndex : -2,
+				segmentOrientation : go.Link.None
+			}, new go.Binding("text", "answer"),
+			// hide empty string;
+			// if the "answer" property is undefined, visible is false due to above default setting
+			new go.Binding("visible", "answer", function(a) {
+				return (a ? true : false);
+			})));
 			
-			    };
-		    }();
+			var jsonurl = "../ivrandcsrAnalysis/toSequence";
+			jQuery.ajax({
+				url : jsonurl,
+				success : function(data) {
+					var json = {
+					       nodeKeyProperty: "key",
+					       nodeDataArray: [{key:1,question:"欢迎"},{key:2,question:"积分查询"},{key:3,question:"账单查询"},{key:4,question:"密码修改"},{key:5,question:"挂失"},{key:6,question:"卡片信息"},{key:7,question:"额度修改及查询"},{key:8,question:"人工服务"}],
+					       linkDataArray: [{from:1,to:2,answer:"5s"},{from:1,to:3,answer:"5s"},{from:1,to:8,answer:"5s"},{from:8,to:5,answer:"7s"},{from:5,to:4,answer:"20s"},{from:8,to:6,answer:"5s"},{from:6,to:7,answer:"25s"}]
+					};	 
+					var json2 = {
+					       nodeKeyProperty: "key",
+					       nodeDataArray: [{key:1,question:"欢迎"},{key:2,question:"积分查询"},{key:3,question:"账单查询"},{key:4,question:"密码修改"},{key:5,question:"挂失"},{key:6,question:"卡片信息"},{key:7,question:"额度修改及查询"},{key:8,question:"人工服务"}],
+					       linkDataArray: [{from:1,to:2,answer:"5s"},{from:1,to:3,answer:"5s"},{from:1,to:7,answer:"5s"},{from:1,to:8,answer:"5s"},{from:1,to:5,answer:"5s"},{from:5,to:4,answer:"20s"},{from:8,to:6,answer:"5s"},{from:1,to:7,answer:"25s"}]
+					};	       
+					//json.nodeDataArray = data.nodeDataArray;
+					//json.linkDataArray = data.linkDataArray;
+					myDiagram.model = go.Model.fromJson(json);
+					myDiagram2.model = go.Model.fromJson(json2);
+				}
+			});
+		}
 			jQuery(document).ready(function(){
-				ChartsAmcharts.init();
+				goInit();
 				$('.datepicker-default').datepicker({
 			        todayHighlight: true
 			    });
@@ -584,8 +545,6 @@ License: You must have a valid license purchased only from themeforest(the above
 				}),
 				require(
 				["echarts",
-				 "echarts/chart/line",
-				 "echarts/chart/pie",
 				 "echarts/chart/bar"
 				],
 				function(e){
@@ -593,189 +552,22 @@ License: You must have a valid license purchased only from themeforest(the above
 					a.setOption({
 						title:{text:'2016/02/29-2016/03/06'},
 						tooltip:{trigger:"axis"},
-						legend:{data:["IVR业务节点访问数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-						yAxis:[{
-								type:"category",
-								data:['故障报修','办理信用卡','信用卡挂失','业务咨询','投诉','申请贷款','取款','个人理财','信托基金业务','捐款']}],
-						xAxis:[{type:"value",splitArea:{show:!0}}],
-						series:[{
-								name:"IVR业务节点访问数量",
-								type:"bar",
-								data:[10,50,100,130,198,200,250,290,320,323]
-								}]
-					});
-					var b=e.init(document.getElementById("bar_bar2"));
-					b.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["CSR业务节点访问数量"]},
+						legend:{data:["平均到达目标业务节点用时（秒）"]},
 						toolbox:{show:!0,
 								 feature:{mark:{show:!1},
 								 saveAsImage:{show:!0}}},
 								 yAxis:[{
 									 type:"category",
-									 data:['办理信用卡','信用卡挂失','业务咨询','故障报修','取款','投诉','申请贷款','个人理财','信托基金业务','捐款']}],
+									 data:['优化前','优化后']}],
 								 xAxis:[{type:"value",splitArea:{show:!0}}],
 								 
 								 series:[
 								 {
-								 	name:"CSR业务节点访问数量",
+								 	name:"平均到达目标业务节点用时（秒）",
 									type:"bar",
-									itemStyle:{
-				                	normal:{
-				                    	color: function(params) {
-				                    			return '#B5C334';
-				                    		}
-				                		}
-				                	},
-									data:[1,5,10,30,98,100,150,190,220,223]
+									data:[30,15]
 								 }]
-					});	
-					var c=e.init(document.getElementById("line_bar1"));
-							c.setOption({
-							tooltip : {
-						        trigger: 'axis'
-						    },
-						    legend: {
-						        data:['来电数量','来电人数']
-						    },
-						    toolbox: {
-						        show : true,
-						        feature : {
-						            saveAsImage : {show: true}
-						        }
-						    },
-						    calculable : true,
-						    xAxis : [
-						        {
-						            type : 'category',
-						            boundaryGap : false,
-						            data : ['2016-03-01','2016-03-02','2016-03-03','2016-03-04','2016-03-05','2016-03-06','2016-03-07']
-						        }
-						    ],
-						    yAxis : [
-						        {
-						            type : 'value'
-						        }
-						    ],
-						    series : [
-						        {
-						            name:'来电数量',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[210,220, 182, 191, 234, 290, 330]
-						        },
-						        {
-						            name:'来电人数',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[190,210, 162, 141, 134, 250, 280]
-						        }
-						    ]
 					});
-					var d=e.init(document.getElementById("line_bar2"));
-							d.setOption({
-							tooltip : {
-						        trigger: 'axis'
-						    },
-						    legend: {
-						        data:['来电数量','来电人数']
-						    },
-						    toolbox: {
-						        show : true,
-						        feature : {
-						            saveAsImage : {show: true}
-						        }
-						    },
-						    calculable : true,
-						    xAxis : [
-						        {
-						            type : 'category',
-						            boundaryGap : false,
-						            data : ['0:00','1:00','2:00','3:00','4:00','5:00','6:00','7:00','8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00']
-						        }
-						    ],
-						    yAxis : [
-						        {
-						            type : 'value'
-						        }
-						    ],
-						    series : [
-						        {
-						            name:'来电数量',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[0, 2, 1, 4, 0, 30, 210,220, 182, 191, 234, 290, 330, 310,150, 232, 201, 154, 190, 330, 410,150,80,60]
-						        },
-						        {
-						            name:'来电人数',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[0, 1, 1, 3, 0, 25, 190,210, 162, 141, 134, 250, 280, 310,150, 212, 200, 114, 140, 230, 360,90,80,40]
-						        }
-						    ]
-					});
-					var f=e.init(document.getElementById("bar_bar3"));
-					f.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["来电数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-								 xAxis:[{
-									 type:"category",
-									 data:['星期日','星期一','星期二','星期三','星期四','星期五','星期六']}],
-								 yAxis:[{type:"value",splitArea:{show:!0}}],
-								 
-								 series:[
-								 {
-								 	name:"来电数量",
-									type:"bar",
-									itemStyle:{
-				                	normal:{
-				                    	color: function(params) {
-				                    			return '#8a2be2';
-				                    		}
-				                		}
-				                	},
-									data:[3589,1879,2014,1986,1900,2200,3233]
-								 }]
-					});	
-					var g=e.init(document.getElementById("bar_bar4"));
-					g.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["来电数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-								 xAxis:[{
-									 type:"category",
-									 data:['2015-03','2015-04','2015-05','2015-06','2015-07','2015-08','2015-09','2015-10','2015-11','2015-12','2016-01','2016-02']}],
-								 yAxis:[{type:"value",splitArea:{show:!0}}],
-								 
-								 series:[
-								 {
-								 	name:"CSR业务节点访问数量",
-									type:"bar",
-									itemStyle:{
-				                	normal:{
-				                    	color: function(params) {
-				                    			return '#B5C334';
-				                    		}
-				                		}
-				                	},
-									data:[15000,15890,16800,14300,19080,22000,15000,19000,22000,22300,14000,25000]
-								 }]
-					});	
 				})
 				
 				var svg, tooltip, biHiSankey, path, defs, colorScale, highlightColorScale, isTransitioning;

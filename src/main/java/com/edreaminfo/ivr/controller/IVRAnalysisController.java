@@ -21,4 +21,32 @@ public class IVRAnalysisController {
 		mv.setViewName("ivr_analysis/businessCun");
 		return mv;
 	}
+	@RequestMapping("/toIvrBusinessAnalysis")
+	public ModelAndView toIvrBusinessAnalysis()
+	{
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("ivr_analysis/ivrBusiness");
+		return mv;
+	}
+	@RequestMapping("/toCsrToHumanAnalysis")
+	public ModelAndView toCsrToHumanAnalysis()
+	{
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("ivr_analysis/csrToHuman");
+		return mv;
+	}
+	@RequestMapping("/toIncomingTelegramCSIAnalysis")
+	public ModelAndView toIncomingTelegramCSIAnalysis()
+	{
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("ivr_analysis/incomingTelegramCSI");
+		return mv;
+	}
+	@RequestMapping("/toIncomingTelegramSequenceAnalysis")
+	public ModelAndView toIncomingTelegramSequenceAnalysis()
+	{
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("ivr_analysis/incomingTelegramSequence");
+		return mv;
+	}
 }

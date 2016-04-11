@@ -87,7 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN CONTAINER -->
         <div class="page-container">
             <#include "../common/left-menu.ftl"/>
-            <input id="side-menu" type="hidden" value="side-2" />
+            <input id="side-menu" type="hidden" value="side-12" />
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>总体绩效分析  </span>
+                                <span>动态IVR推荐效果监测  </span>
                                 
                             </li>
                         </ul>
@@ -137,7 +137,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 历史来电情况
+                    <h3 class="page-title"> 总体概览
                         <small>2016/03/01-2016/03/02</small>
                     </h3>
                     <!-- END PAGE TITLE-->
@@ -186,7 +186,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         	<div id="allphonenum" class="number">
                             	<span data-counter="counterup" data-value="1349">0</span>
                             </div>
-                            <div class="desc"> 总来电数 </div>
+                            <div class="desc"> 动态推荐的来电数 </div>
                         </div>
                         <a class="more" href="javascript:reflash('allphonenum');"> 刷新
                         	<i class="m-icon-swapright m-icon-white"></i>
@@ -200,9 +200,9 @@ License: You must have a valid license purchased only from themeforest(the above
                         </div>
                         <div class="details">
                         	<div id="allhumnum" class="number">
-                            	<span data-counter="counterup" data-value="1205">0</span> 
+                            	<span data-counter="counterup" data-value="5">0</span> 
                             </div>
-                            <div class="desc"> 总来电人数 </div>
+                            <div class="desc"> 动态推荐的次数 </div>
                         </div>
                         <a class="more" href="javascript:reflash('allhumnum');"> 刷新
                         	<i class="m-icon-swapright m-icon-white"></i>
@@ -216,9 +216,9 @@ License: You must have a valid license purchased only from themeforest(the above
                         </div>
                         <div class="details">
                         	<div id="humavgnum" class="number">
-                            	<span data-counter="counterup" data-value="1245">0</span>
+                            	<span data-counter="counterup" data-value="3.2">0</span>
                             </div>
-                            <div class="desc"> 单用户平均来电数
+                            <div class="desc"> 单通电话平均推荐次数
                             </div>
                         </div>
                         <a class="more" href="javascript:reflash('humavgnum');"> 刷新
@@ -226,239 +226,39 @@ License: You must have a valid license purchased only from themeforest(the above
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 	<div class="dashboard-stat blue-hoki">
                     	<div class="visual">
                         	<i class="fa fa-cubes"></i>
                         </div>
                         <div class="details">
                         	<div id="allphonenum2" class="number">
-                            	<span data-counter="counterup" data-value="2356">0</span>
+                            	<span data-counter="counterup" data-value="89">0</span> %
                             </div>
-                            <div class="desc"> 纯IVR来电数量 </div>
+                            <div class="desc"> 推荐命中率 </div>
                         </div>
                         <a class="more" href="javascript:reflash('allphonenum2');"> 刷新
                         	<i class="m-icon-swapright m-icon-white"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 	<div class="dashboard-stat red">
                     	<div class="visual">
                         	<i class="fa fa-bank"></i>
                         </div>
                         <div class="details">
                         	<div id="allhumnum2" class="number">
-                            	<span data-counter="counterup" data-value="205">0</span> 
+                            	<span data-counter="counterup" data-value="75">0</span> %
                             </div>
-                            <div class="desc"> IVR转CSR数量 </div>
+                            <div class="desc"> 推荐命中电话占比 </div>
                         </div>
                         <a class="more" href="javascript:reflash('allhumnum2');"> 刷新
                         	<i class="m-icon-swapright m-icon-white"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat green-sharp">
-                    	<div class="visual">
-                        	<i class="fa fa-fax"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum2" class="number">
-                            	<span data-counter="counterup" data-value="1130">0</span>
-                            </div>
-                            <div class="desc"> 直接转CSR数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum2');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat grey-mint">
-                    	<div class="visual">
-                        	<i class="fa fa-cogs"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum3" class="number">
-                            	<span data-counter="counterup" data-value="8456">0</span>
-                            </div>
-                            <div class="desc"> 平均通话时长
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum3');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat purple">
-                    	<div class="visual">
-                        	<i class="fa fa-clone"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum4" class="number">
-                            	<span data-counter="counterup" data-value="5678">0</span>
-                            </div>
-                            <div class="desc"> 访问业务节点数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum4');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat yellow-gold">
-                    	<div class="visual">
-                        	<i class="fa fa-globe"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum5" class="number">
-                            	<span data-counter="counterup" data-value="3093">0</span>
-                            </div>
-                            <div class="desc"> IVR节点数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum5');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red-pink">
-                    	<div class="visual">
-                        	<i class="fa fa-database"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum3" class="number">
-                            	<span data-counter="counterup" data-value="1205">0</span> 
-                            </div>
-                            <div class="desc"> CSR节点数量 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum3');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
-            <div class="row">
-            <div class="col-md-6">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">IVR业务节点访问量</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            <div class="col-md-6">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">CSR业务节点访问量</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar2" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">日来电数量与来电人数</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="line_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">小时来电数量与来电人数</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="line_bar2" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">一周来电图</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar3" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">过去12月来电图</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar4" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <!--<div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">业务占比</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="pie_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            <div class="row">
-				<div class="col-md-12">
-					<div class="portlet light portlet-fit ">
-						<div class="portlet-title">
-							<div class="caption">
-						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">来电数量趋势图</span>
-						    </div>
-						</div>
-						<div class="portlet-body">
-							<div id="sankey1" align="center"></div>
-						</div>
-					</div>
-				</div>	
-			</div>-->
 			<!--end content-->
         </div></div></div>
         <!-- END CONTAINER -->

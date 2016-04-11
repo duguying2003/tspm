@@ -20,7 +20,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <head>
         <meta charset="utf-8" />
-        <title>IVR | IVR分析系统</title>
+        <title>CCBI | 客户行为分析与决策支持平台</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -55,12 +55,12 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="row bs-reset">
                 <div class="col-md-6 bs-reset">
                     <div class="login-bg" style="background-image:url(assets/pages/img/login/bg1.jpg)">
-                        <img class="login-logo" src="assets/pages/img/login/logo2.png" /> </div>
+                        <img class="login-logo" src="assets/pages/img/login/logo3.png" /> </div>
                 </div>
                 <div class="col-md-6 login-container bs-reset">
                     <div class="login-content">
-                        <h1>IVR分析系统</h1>
-                        <p>  </p>
+                    	<font size=30 style="font-family:'微软雅黑';">呼叫中心语音系统</font><br/>
+                        <h1>客户行为分析与决策支持平台</h1>
                         <form action="javascript:;" class="login-form" method="post">
                             <div class="alert alert-danger display-hide">
                                 <button class="close" data-close="alert"></button>

@@ -87,7 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN CONTAINER -->
         <div class="page-container">
             <#include "../common/left-menu.ftl"/>
-            <input id="side-menu" type="hidden" value="side-2" />
+            <input id="side-menu" type="hidden" value="side-13" />
             <!-- BEGIN CONTENT -->
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
@@ -104,7 +104,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>总体绩效分析  </span>
+                                <span>动态IVR推荐效果监测  </span>
                                 
                             </li>
                         </ul>
@@ -137,7 +137,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 历史来电情况
+                    <h3 class="page-title"> 推荐命中分析
                         <small>2016/03/01-2016/03/02</small>
                     </h3>
                     <!-- END PAGE TITLE-->
@@ -176,289 +176,424 @@ License: You must have a valid license purchased only from themeforest(the above
 			    </div>
 			</div>
 			<!--begin content-->
-			<div class="row col-md-12">
-            	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat blue">
-                    	<div class="visual">
-                        	<i class="fa fa-comments"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allphonenum" class="number">
-                            	<span data-counter="counterup" data-value="1349">0</span>
-                            </div>
-                            <div class="desc"> 总来电数 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allphonenum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red-pink">
-                    	<div class="visual">
-                        	<i class="fa fa-bar-chart-o"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum" class="number">
-                            	<span data-counter="counterup" data-value="1205">0</span> 
-                            </div>
-                            <div class="desc"> 总来电人数 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat green">
-                    	<div class="visual">
-                        	<i class="fa fa-shopping-cart"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum" class="number">
-                            	<span data-counter="counterup" data-value="1245">0</span>
-                            </div>
-                            <div class="desc"> 单用户平均来电数
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat blue-hoki">
-                    	<div class="visual">
-                        	<i class="fa fa-cubes"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allphonenum2" class="number">
-                            	<span data-counter="counterup" data-value="2356">0</span>
-                            </div>
-                            <div class="desc"> 纯IVR来电数量 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allphonenum2');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red">
-                    	<div class="visual">
-                        	<i class="fa fa-bank"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum2" class="number">
-                            	<span data-counter="counterup" data-value="205">0</span> 
-                            </div>
-                            <div class="desc"> IVR转CSR数量 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum2');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat green-sharp">
-                    	<div class="visual">
-                        	<i class="fa fa-fax"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum2" class="number">
-                            	<span data-counter="counterup" data-value="1130">0</span>
-                            </div>
-                            <div class="desc"> 直接转CSR数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum2');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat grey-mint">
-                    	<div class="visual">
-                        	<i class="fa fa-cogs"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum3" class="number">
-                            	<span data-counter="counterup" data-value="8456">0</span>
-                            </div>
-                            <div class="desc"> 平均通话时长
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum3');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat purple">
-                    	<div class="visual">
-                        	<i class="fa fa-clone"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum4" class="number">
-                            	<span data-counter="counterup" data-value="5678">0</span>
-                            </div>
-                            <div class="desc"> 访问业务节点数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum4');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat yellow-gold">
-                    	<div class="visual">
-                        	<i class="fa fa-globe"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="humavgnum5" class="number">
-                            	<span data-counter="counterup" data-value="3093">0</span>
-                            </div>
-                            <div class="desc"> IVR节点数量
-                            </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('humavgnum5');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                	<div class="dashboard-stat red-pink">
-                    	<div class="visual">
-                        	<i class="fa fa-database"></i>
-                        </div>
-                        <div class="details">
-                        	<div id="allhumnum3" class="number">
-                            	<span data-counter="counterup" data-value="1205">0</span> 
-                            </div>
-                            <div class="desc"> CSR节点数量 </div>
-                        </div>
-                        <a class="more" href="javascript:reflash('allhumnum3');"> 刷新
-                        	<i class="m-icon-swapright m-icon-white"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-md-6">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">IVR业务节点访问量</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            <div class="col-md-6">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">CSR业务节点访问量</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar2" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">日来电数量与来电人数</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="line_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">小时来电数量与来电人数</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="line_bar2" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">一周来电图</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar3" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">过去12月来电图</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="bar_bar4" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            </div>
-            <!--<div class="col-md-12">
-            	<div class="portlet light portlet-fit ">
-					<div class="portlet-title">
-						<div class="caption">
-						    <i class=" icon-layers font-green"></i>
-						    <span class="caption-subject font-green bold uppercase">业务占比</span>
-						</div>
-					</div>
-					<div class="portlet-body">
-						<div id="pie_bar1" style="height:500px;"></div>
-					</div>
-				</div>
-            </div>
-            <div class="row">
+			<div class="row">
 				<div class="col-md-12">
 					<div class="portlet light portlet-fit ">
 						<div class="portlet-title">
 							<div class="caption">
 						    	<i class=" icon-layers font-green"></i>
-						        <span class="caption-subject font-green bold uppercase">来电数量趋势图</span>
+						        <span class="caption-subject font-green bold uppercase">命中率详情</span>
+						    </div>
+						    <!--<div class="actions">
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-cloud-upload"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-wrench"></i>
+						        </a>
+						        <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+						        	<i class="icon-trash"></i>
+						        </a>
+						        </div>-->
+						</div>
+						<div class="portlet-body">
+							<div class="col-md-6">
+								<div id="pie_bar1" style="height:500px;"></div>
+							</div>
+							<div class="col-md-6">
+								<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_8">
+								<thead>
+								<tr>
+									<th> 命中位置 </th>
+									<th> 计数 </th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr class="odd gradeX">
+										<td>第1位命中</td>
+										<td>13106</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>第2位命中</td>
+										<td>2701</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>第3位命中</td>
+										<td>3310</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>第4位命中</td>
+										<td>2344</td>
+									</tr>
+									<tr class="odd gradeX">
+										<td>第5位命中</td>
+										<td>1754</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class="fa fa-gift"></i>推荐范围内各业务节点命中率分析
+						    </div>
+						    <div class="tools">
+						    	<a href="javascript:;" class="collapse"> </a>
 						    </div>
 						</div>
 						<div class="portlet-body">
-							<div id="sankey1" align="center"></div>
+							<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_8">
+							<thead>
+							<tr>
+								<th width="30%"> 推荐节点 </th>
+								<th> 第1位命中次数 </th>
+								<th> 第2位命中次数 </th>
+								<th> 第3位命中次数 </th>
+								<th> 第4位命中次数 </th>
+								<th> 第5位命中次数 </th>
+								<th> 合计 </th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td>短信告知最近一期账单信息</td>
+									<td>5</td>
+									<td>0</td>
+									<td>3</td>
+									<td>1</td>
+									<td>2</td>
+									<td>11</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额</td>
+									<td>11452</td>
+									<td>938</td>
+									<td>2106</td>
+									<td>1544</td>
+									<td>1160</td>
+									<td>17200</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额明细播报</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>未出账单查询</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>未出账单交易明细</td>
+									<td>8</td>
+									<td>1</td>
+									<td>2</td>
+									<td>2</td>
+									<td>0</td>
+									<td>13</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>历史账单金额查询</td>
+									<td>692</td>
+									<td>856</td>
+									<td>431</td>
+									<td>261</td>
+									<td>183</td>
+									<td>2423</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>最近一次还款记录</td>
+									<td>28</td>
+									<td>17</td>
+									<td>6</td>
+									<td>9</td>
+									<td>2</td>
+									<td>62</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>传真或补给账单</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>额度调整</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>延迟还款申请</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>非1862卡主卡双币卡</td>
+									<td>4</td>
+									<td>6</td>
+									<td>0</td>
+									<td>1</td>
+									<td>2</td>
+									<td>13</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>动态菜单-申请东方卡自动扣款</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>信用卡超限功能管理</td>
+									<td>77</td>
+									<td>8</td>
+									<td>2</td>
+									<td>4</td>
+									<td>2</td>
+									<td>93</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>播报信用卡帐单日</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>自由分期付</td>
+									<td>1</td>
+									<td>2</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>4</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>账单分期付</td>
+									<td>834</td>
+									<td>869</td>
+									<td>760</td>
+									<td>520</td>
+									<td>402</td>
+									<td>3385</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>播报万用金额度</td>
+									<td>2</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>2</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>积分查询</td>
+									<td>2</td>
+									<td>4</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>8</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>合计</td>
+									<td>13106</td>
+									<td>2701</td>
+									<td>3310</td>
+									<td>2344</td>
+									<td>1754</td>
+									<td>23215</td>
+								</tr>
+							</tbody>
+							</table>
 						</div>
 					</div>
-				</div>	
-			</div>-->
+				</div>
+			</div>
+			<div class="row">
+			<div class="col-md-12">
+			<div class="col-md-6">
+				<div class="portlet-body">
+					<div id="pie_bar2" style="height:500px;"></div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="portlet-body">
+					<div id="pie_bar3" style="height:500px;"></div>
+				</div>
+			</div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class="fa fa-gift"></i>推荐未命中分析（推荐业务）
+						    </div>
+						    <div class="tools">
+						    	<a href="javascript:;" class="collapse"> </a>
+						    </div>
+						</div>
+						<div class="portlet-body">
+							<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_8">
+							<thead>
+							<tr>
+								<th width="50%"> 推荐未命中，后续办理业务与推荐业务相同 </th>
+								<th> 计数 </th>
+								<th> 占此类节点 </th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td>当期账单金额</td>
+									<td>11497</td>
+									<td>82.31%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>积分查询</td>
+									<td>2068</td>
+									<td>14.81%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>最近一次还款记录</td>
+									<td>129</td>
+									<td>0.92%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>账单分期付</td>
+									<td>81</td>
+									<td>0.58%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>历史账单金额查询</td>
+									<td>77</td>
+									<td>0.55%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>未出账单交易明细</td>
+									<td>68</td>
+									<td>0.49%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>短信告知最近一期账单信息</td>
+									<td>45</td>
+									<td>0.32%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>延迟还款申请</td>
+									<td>2</td>
+									<td>0.01%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>自由分期付</td>
+									<td>1</td>
+									<td>0.01%</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption">
+						    	<i class="fa fa-gift"></i>推荐未命中分析（推荐范围）
+						    </div>
+						    <div class="tools">
+						    	<a href="javascript:;" class="collapse"> </a>
+						    </div>
+						</div>
+						<div class="portlet-body">
+							<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_8">
+							<thead>
+							<tr>
+								<th width="50%"> 推荐未命中，后续办理业务不在推荐范围中 </th>
+								<th> 计数 </th>
+								<th> 占此类节点 </th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td>分期交易查询</td>
+									<td>18530</td>
+									<td>11.25%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>当期账单金额</td>
+									<td>11497</td>
+									<td>6.98%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>账务查询</td>
+									<td>8842</td>
+									<td>5.37%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>卡片状态及风险等级</td>
+									<td>8472</td>
+									<td>5.14%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>已出账单查询</td>
+									<td>7898</td>
+									<td>4.79%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>未出账单查询</td>
+									<td>7118</td>
+									<td>4.32%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>额度调整</td>
+									<td>6023</td>
+									<td>3.66%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>临时额度</td>
+									<td>5013</td>
+									<td>3.04%</td>
+								</tr>
+								<tr class="odd gradeX">
+									<td>其它</td>
+									<td>82173</td>
+									<td>49.88%</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!--end content-->
         </div></div></div>
         <!-- END CONTAINER -->
@@ -571,7 +706,7 @@ License: You must have a valid license purchased only from themeforest(the above
 			    };
 		    }();
 			jQuery(document).ready(function(){
-				ChartsAmcharts.init();
+				//ChartsAmcharts.init();
 				$('.datepicker-default').datepicker({
 			        todayHighlight: true
 			    });
@@ -589,94 +724,134 @@ License: You must have a valid license purchased only from themeforest(the above
 				 "echarts/chart/bar"
 				],
 				function(e){
-					var a=e.init(document.getElementById("bar_bar1"));
+					var a=e.init(document.getElementById("pie_bar1"));
 					a.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["IVR业务节点访问数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-						yAxis:[{
-								type:"category",
-								data:['故障报修','办理信用卡','信用卡挂失','业务咨询','投诉','申请贷款','取款','个人理财','信托基金业务','捐款']}],
-						xAxis:[{type:"value",splitArea:{show:!0}}],
-						series:[{
-								name:"IVR业务节点访问数量",
-								type:"bar",
-								data:[10,50,100,130,198,200,250,290,320,323]
-								}]
+						title : {
+					        text: '推荐数据分析',
+					        subtext: '纯属虚构',
+					        x:'center'
+					    },
+					    tooltip : {
+					        trigger: 'item',
+					        formatter: "{a} <br/>{b} : {c} ({d}%)"
+					    },
+					    legend: {
+					        orient : 'vertical',
+					        x : 'left',
+					        data:['第1位命中','第2位命中','第3位命中','第4位命中','第5位命中']
+					    },
+					    toolbox: {
+					        show : true,
+					        feature : {
+					            saveAsImage : {show: true}
+					        }
+					    },
+					    calculable : true,
+					    series : [
+					        {
+					            name:'推荐数据命中率',
+					            type:'pie',
+					            radius : '55%',
+					            center: ['50%', '60%'],
+					            data:[
+					                {value:13106, name:'第1位命中'},
+					                {value:2701, name:'第2位命中'},
+					                {value:3310, name:'第3位命中'},
+					                {value:2344, name:'第4位命中'},
+					                {value:1754, name:'第5位命中'}
+					            ]
+					        }
+					    ]
 					});
-					var b=e.init(document.getElementById("bar_bar2"));
+					var b=e.init(document.getElementById("pie_bar2"));
 					b.setOption({
-						title:{text:'2016/02/29-2016/03/06'},
-						tooltip:{trigger:"axis"},
-						legend:{data:["CSR业务节点访问数量"]},
-						toolbox:{show:!0,
-								 feature:{mark:{show:!1},
-								 saveAsImage:{show:!0}}},
-								 yAxis:[{
-									 type:"category",
-									 data:['办理信用卡','信用卡挂失','业务咨询','故障报修','取款','投诉','申请贷款','个人理财','信托基金业务','捐款']}],
-								 xAxis:[{type:"value",splitArea:{show:!0}}],
-								 
-								 series:[
-								 {
-								 	name:"CSR业务节点访问数量",
-									type:"bar",
-									itemStyle:{
-				                	normal:{
-				                    	color: function(params) {
-				                    			return '#B5C334';
-				                    		}
-				                		}
-				                	},
-									data:[1,5,10,30,98,100,150,190,220,223]
-								 }]
-					});	
-					var c=e.init(document.getElementById("line_bar1"));
-							c.setOption({
-							tooltip : {
-						        trigger: 'axis'
-						    },
-						    legend: {
-						        data:['来电数量','来电人数']
-						    },
-						    toolbox: {
-						        show : true,
-						        feature : {
-						            saveAsImage : {show: true}
-						        }
-						    },
-						    calculable : true,
-						    xAxis : [
-						        {
-						            type : 'category',
-						            boundaryGap : false,
-						            data : ['2016-03-01','2016-03-02','2016-03-03','2016-03-04','2016-03-05','2016-03-06','2016-03-07']
-						        }
-						    ],
-						    yAxis : [
-						        {
-						            type : 'value'
-						        }
-						    ],
-						    series : [
-						        {
-						            name:'来电数量',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[210,220, 182, 191, 234, 290, 330]
-						        },
-						        {
-						            name:'来电人数',
-						            type:'line',
-						            smooth:true,
-						            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-						            data:[190,210, 162, 141, 134, 250, 280]
-						        }
-						    ]
+						title : {
+					        text: '推荐数据分析',
+					        subtext: '纯属虚构',
+					        x:'center'
+					    },
+					    tooltip : {
+					        trigger: 'item',
+					        formatter: "{a} <br/>{b} : {c} ({d}%)"
+					    },
+					    legend: {
+					        orient : 'vertical',
+					        x : 'left',
+					        data:['推荐未命中，后续办理业务与推荐重合的来电','推荐未命中，后续办理业务与推荐无重合的来电']
+					    },
+					    toolbox: {
+					        show : true,
+					        feature : {
+					            saveAsImage : {show: true}
+					        }
+					    },
+					    calculable : true,
+					    series : [
+					        {
+					            name:'推荐数据命中率',
+					            type:'pie',
+					            radius : '55%',
+					            center: ['50%', '60%'],
+					            data:[
+					                {value:42977, name:'推荐未命中，后续办理业务与推荐重合的来电'},
+					                {value:13352, name:'推荐未命中，后续办理业务与推荐无重合的来电'}
+					            ],
+					            itemStyle:{ 
+						            normal:{ 
+						                  label:{ 
+						                    show: true, 
+						                    formatter: "{b} : \n {c} ({d}%)" 
+						                  }, 
+						                  labelLine :{show:true} 
+						                } 
+						            }
+					        }
+					    ]
+					});
+					var c=e.init(document.getElementById("pie_bar3"));
+					c.setOption({
+						title : {
+					        text: '推荐数据分析',
+					        subtext: '纯属虚构',
+					        x:'center'
+					    },
+					    tooltip : {
+					        trigger: 'item',
+					        formatter: "{a} <br/>{b} : {c} ({d}%)"
+					    },
+					    legend: {
+					        orient : 'vertical',
+					        x : 'left',
+					        data:['推荐未命中，后续办理业务不在推荐范围中的来电','推荐未命中，后续办理业务均在推荐范围中的来电']
+					    },
+					    toolbox: {
+					        show : true,
+					        feature : {
+					            saveAsImage : {show: true}
+					        }
+					    },
+					    calculable : true,
+					    series : [
+					        {
+					            name:'推荐数据命中率',
+					            type:'pie',
+					            radius : '55%',
+					            center: ['50%', '60%'],
+					            data:[
+					                {value:47035, name:'推荐未命中，后续办理业务不在推荐范围中的来电'},
+					                {value:9267, name:'推荐未命中，后续办理业务均在推荐范围中的来电'}
+					            ],
+					            itemStyle:{ 
+						            normal:{ 
+						                  label:{ 
+						                    show: true, 
+						                    formatter: "{b} :\n {c} ({d}%)" 
+						                  }, 
+						                  labelLine :{show:true} 
+						                } 
+						            } 
+					        }
+					    ]
 					});
 					var d=e.init(document.getElementById("line_bar2"));
 							d.setOption({

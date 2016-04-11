@@ -1,5 +1,5 @@
 <meta charset="utf-8" />
-<title>IVR | IVR分析系统</title>
+<title>CCBI | 客户行为分析与决策支持平台</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <meta content="" name="description" />

@@ -44,17 +44,17 @@
                             <ul class="sub-menu">
                                 <li id="side-1" class="nav-item">
                                     <a href="../overallKPI/toIncomingTelegramNumAnalysis" class="nav-link ">
-                                        <span class="title">总来电数量分析</span>
+                                        <span class="title">当日来电情况</span>
                                     </a>
                                 </li>
                                 <li id="side-2" class="nav-item">
                                     <a href="../overallKPI/toIncomingTelegramBusinessAnalysis" class="nav-link ">
-                                        <span class="title">总来电业务分析</span>
+                                        <span class="title">历史来电情况</span>
                                     </a>
                                 </li>
                                 <li id="side-3" class="nav-item">
                                     <a href="../overallKPI/toUserIncomingTelegramBehaviorAnalysis" class="nav-link ">
-                                        <span class="title">用户拨打行为分析</span>
+                                        <span class="title">来电业务分析</span>
                                     </a>
                                 </li>
                                 <!--<li class="nav-item start ">
@@ -76,23 +76,128 @@
                         <li class="nav-item">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <i class="icon-diamond"></i>
-                                <span class="title">IVR 分析</span>
+                                <span class="title">来电目的分析</span>
                                 <span class="arrow"></span>
                             </a>
                             <ul class="sub-menu">
                             	<li id="side-4" class="nav-item">
                                     <a href="../ivrAnalysis/toIncomingTelegramTypeAnalysis" class="nav-link ">
-                                        <span class="title">来电类型分析</span>
+                                        <span class="title">来电业务类型统计</span>
                                     </a>
                                 </li>
                                 <li id="side-5" class="nav-item">
                                     <a href="../ivrAnalysis/toBusinessCunAnalysis" class="nav-link ">
-                                        <span class="title">业务数量统计</span>
+                                        <span class="title">来电具体业务统计</span>
+                                    </a>
+                                </li>
+                                <li id="side-6" class="nav-item">
+                                    <a href="../ivrAnalysis/toIvrBusinessAnalysis" class="nav-link ">
+                                        <span class="title">IVR来电业务统计</span>
+                                    </a>
+                                </li>
+                                <li id="side-7" class="nav-item">
+                                    <a href="../ivrAnalysis/toCsrToHumanAnalysis" class="nav-link ">
+                                        <span class="title">CSR转人工分析</span>
+                                    </a>
+                                </li>
+                                <li id="side-8" class="nav-item">
+                                    <a href="../ivrandcsrAnalysis/toIncomingTelegramLinkAnalysis" class="nav-link ">
+                                        <span class="title">二次来电分析</span>
+                                    </a>
+                                </li>
+                                <li id="side-9" class="nav-item">
+                                    <a href="#" class="nav-link ">
+                                        <span class="title">来电满意度分析</span>
+                                    </a>
+                                </li>
+                                <li id="side-10" class="nav-item">
+                                    <a href="../ivrAnalysis/toIncomingTelegramSequenceAnalysis" class="nav-link ">
+                                        <span class="title">来电业务序列分析</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-puzzle"></i>
+                                <span class="title">IVR菜单路径优化</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                            	<li id="side-11" class="nav-item">
+                                    <a href="../ivrmenupath/toIVRMenuPathOptimization" class="nav-link ">
+                                        <span class="title">路径优化</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-briefcase"></i>
+                                <span class="title">动态IVR推荐效果监测</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                            	<li id="side-12" class="nav-item">
+                                    <a href="../divrAnalysis/toOverview" class="nav-link ">
+                                        <span class="title">总体概览</span>
+                                    </a>
+                                </li>
+                                <li id="side-13" class="nav-item">
+                                    <a href="../divrAnalysis/toRecommendedHit" class="nav-link ">
+                                        <span class="title">推荐命中分析</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-wallet"></i>
+                                <span class="title">事件监控与预警</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                            	<li id="side-14" class="nav-item">
+                                    <a href="#" class="nav-link ">
+                                        <span class="title">监控规则设置</span>
+                                    </a>
+                                </li>
+                                <li id="side-15" class="nav-item">
+                                    <a href="#" class="nav-link ">
+                                        <span class="title">节点流量监控</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-bulb"></i>
+                                <span class="title">基础数据维护</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                            	<li id="side-16" class="nav-item">
+                                    <a href="#" class="nav-link ">
+                                        <span class="title">业务菜单设置</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-settings"></i>
+                                <span class="title">系统设置</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                            	<li id="side-17" class="nav-item">
+                                    <a href="# class="nav-link ">
+                                        <span class="title">参数设置</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--<li class="nav-item">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <i class="icon-puzzle"></i>
                                 <span class="title">IVR和CSR交叉分析</span>
@@ -109,13 +214,8 @@
                                         <span class="title">序列分析</span>
                                     </a>
                                 </li>
-                                <li id="side-8" class="nav-item">
-                                    <a href="../ivrandcsrAnalysis/toIncomingTelegramLinkAnalysis" class="nav-link ">
-                                        <span class="title">多通电话关联分析</span>
-                                    </a>
-                                </li>
                             </ul>
-                        </li>
+                        </li>-->
                     </ul>
                     <!-- END SIDEBAR MENU -->
                     <!-- END SIDEBAR MENU -->
